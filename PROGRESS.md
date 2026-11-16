@@ -4,7 +4,7 @@
 
 M0 architecture/spec preservation and initial configuration: `c26b4fab5e50bb32ca35bc86836ad9e80a4cf1eb`, pushed origin/main. Initial README-only repository, no executable baseline. Eight requested skills found/read, shared studio references reused. Full owner brief, 24-section appendix and 1,367 nonempty research lines preserved/indexed. 53 sources inventoried with honest review/status. Two new baseline tests + typecheck/build passed. Flownix untouched.
 
-M1 local/manual discovery and private-rule slice: implementation commit pending (actual SHA recorded in follow-up log commit). Includes persistent IDN/suffix normalization and raw import provenance; private-by-default license partitions and explicit publication allowlist; public empty/sample views; search/filter/multi-sort/pagination/compare/evidence/watchlist; locally provisioned account sessions; per-user versioned AND/OR saved rules, unknown handling, preview, Lagos schedules/quiet hours/caps; shared Telegram one-time linking/encryption; reviewed nonfixture outbox/material dedupe; leased jobs/retries/dead letter and zero-spend reservation helper. Three transactional migrations include empty future research entity contracts. Original logo, icon, wordmark, SVG+PNG variants, favicon/app icons/OG/social/GitHub previews; self-hosted OFL font. No video.
+M1 local/manual discovery and private-rule slice: `202c6a5980ac29e4b0bfa02396165cf7f5fea1fa`, pushed origin/main. Includes persistent IDN/suffix normalization and raw import provenance; private-by-default license partitions and explicit publication allowlist; public empty/sample views; search/filter/multi-sort/pagination/compare/evidence/watchlist; locally provisioned account sessions; per-user versioned AND/OR saved rules, unknown handling, preview, Lagos schedules/quiet hours/caps; shared Telegram one-time linking/encryption; reviewed nonfixture outbox/material dedupe; leased jobs/retries/dead letter and zero-spend reservation helper. Three transactional migrations include empty future research entity contracts. Original logo, icon, wordmark, SVG+PNG variants, favicon/app icons/OG/social/GitHub previews; self-hosted OFL font. No video.
 
 ## Tests and gates
 
@@ -18,7 +18,7 @@ M1 is a usable local/manual vertical slice, not complete provider integration or
 
 ## Next
 
-After final M1 safety test and commit/push with clean tree: M2 extension/history/comparable evidence + revised brandable/geo/EMD scoring and missing-input explanations. Then M3 company evidence, M4 keyword/TLD trends, M5 outcomes, M6 complete public/account/admin design and visual QA, M7 production security/jobs/API/deployment, M7B optional channels/entitlements/billing OFF, M8 audit/handoff. M9 post-handoff activation requires later owner direction; no paid subscription approval inferred.
+M1 check passed (19/19 core/HTTP, 4/4 browser); clean checkpoint committed and pushed. Next M2 extension/history/comparable evidence + revised brandable/geo/EMD scoring and missing-input explanations. Then M3 company evidence, M4 keyword/TLD trends, M5 outcomes, M6 complete public/account/admin design and visual QA, M7 production security/jobs/API/deployment, M7B optional channels/entitlements/billing OFF, M8 audit/handoff. M9 post-handoff activation requires later owner direction; no paid subscription approval inferred.
 
 ## Research checklist
 - [x] All 24 original sections retained and line-indexed, exact historical qualifications intact.
