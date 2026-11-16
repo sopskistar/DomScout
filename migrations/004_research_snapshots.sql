@@ -1,0 +1,2 @@
+CREATE TABLE research_snapshots(id TEXT PRIMARY KEY,listing_id TEXT NOT NULL REFERENCES listings(id),tenant_id TEXT NOT NULL REFERENCES tenants(id),user_id TEXT NOT NULL REFERENCES users(id),dataset TEXT NOT NULL CHECK(dataset='manual'),bundle_json TEXT NOT NULL,config_json TEXT NOT NULL,result_json TEXT NOT NULL,created_at TEXT NOT NULL);
+CREATE INDEX research_scope ON research_snapshots(tenant_id,listing_id,created_at DESC);

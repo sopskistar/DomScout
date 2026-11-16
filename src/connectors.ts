@@ -26,3 +26,13 @@ export function rdapEndpoint(domain:string,bootstrap:{services:[string[],string[
 }
 // Live RDAP transport intentionally not enabled until each registry's terms/retention
 // and request budget are approved. No arbitrary URL fetch or hidden scraping fallback.
+
+// Typed normalized evidence is in research.ts; vendor wire schemas stay unknown
+// until official access/rights are approved. No paid or hidden fetch fallback.
+export const enrichmentConnectors=[
+ new DisabledInventory('dotdb','DOTDB_ENABLED'),new DisabledInventory('namebio','NAMEBIO_ENABLED'),
+ new DisabledInventory('internet-archive-wayback-cdx','INTERNET_ARCHIVE_WAYBACK_CDX_ENABLED'),new DisabledInventory('namecheap','NAMECHEAP_ENABLED'),
+ new DisabledInventory('securitytrails','SECURITYTRAILS_ENABLED'),new DisabledInventory('whoisxml-api','WHOISXML_API_ENABLED'),
+ new DisabledInventory('u-s-census-bureau-api','U_S_CENSUS_BUREAU_API_ENABLED'),new DisabledInventory('google-maps-places','GOOGLE_MAPS_PLACES_ENABLED'),
+ new DisabledInventory('google-ads-keyword-planner','GOOGLE_ADS_KEYWORD_PLANNER_ENABLED')
+];

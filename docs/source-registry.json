@@ -23,7 +23,7 @@
     "status": "not_started",
     "flag": "DYNADOT_ENABLED",
     "enabled": false,
-    "auth": "Pending official verification",
+    "auth": "API Key + API Secret from Tools > API; REST beta documented, no credentials configured",
     "pricing": "Unknown; no paid activation approved",
     "quota": "Unknown; default 0 upstream requests until vetted",
     "storage": "No redistribution assumed; owner-only until rights established",
@@ -84,16 +84,16 @@
     "name": "Namecheap",
     "url": "https://www.namecheap.com/support/api/intro/",
     "milestone": 2,
-    "status": "not_started",
+    "status": "blocked",
     "flag": "NAMECHEAP_ENABLED",
     "enabled": false,
-    "auth": "Pending official verification",
+    "auth": "APIUser, ApiKey, UserName and ClientIp documented; production account eligibility unverified",
     "pricing": "Unknown; no paid activation approved",
-    "quota": "Unknown; default 0 upstream requests until vetted",
+    "quota": "50 names maximum per check documented; request rate and production eligibility unverified",
     "storage": "No redistribution assumed; owner-only until rights established",
     "fallback": "User-authorized CSV/JSON with evidence URL, timestamp and permission; fixtures isolated",
     "lastChecked": "2026-11-16",
-    "notes": "Developer intro accessible. Production eligibility, prices, quotas and bulk lookup storage rights must be checked before activation."
+    "notes": "Official domains.check XML docs reviewed; maximum 50 names per check documented. Production eligibility/key/client-IP, price/rate and retention/redistribution still unverified. No API call."
   },
   {
     "id": "sedo",
@@ -212,7 +212,7 @@
     "name": "WhoisXML API",
     "url": "https://www.whoisxmlapi.com/",
     "milestone": 2,
-    "status": "not_started",
+    "status": "blocked",
     "flag": "WHOISXML_API_ENABLED",
     "enabled": false,
     "auth": "Pending official verification",
@@ -220,24 +220,24 @@
     "quota": "Unknown; default 0 upstream requests until vetted",
     "storage": "No redistribution assumed; owner-only until rights established",
     "fallback": "User-authorized CSV/JSON with evidence URL, timestamp and permission; fixtures isolated",
-    "lastChecked": null,
-    "notes": "Not yet reviewed. URL is a starting point from the inventory, not access authorization."
+    "lastChecked": "2026-11-16",
+    "notes": "Official documentation URL inaccessible during review. Access, storage, pricing and quota remain unknown; typed guard OFF."
   },
   {
     "id": "securitytrails",
     "name": "SecurityTrails",
     "url": "https://securitytrails.com/",
     "milestone": 2,
-    "status": "not_started",
+    "status": "blocked",
     "flag": "SECURITYTRAILS_ENABLED",
     "enabled": false,
-    "auth": "Pending official verification",
+    "auth": "APIKEY header documented; no key or approved plan configured",
     "pricing": "Unknown; no paid activation approved",
     "quota": "Unknown; default 0 upstream requests until vetted",
     "storage": "No redistribution assumed; owner-only until rights established",
     "fallback": "User-authorized CSV/JSON with evidence URL, timestamp and permission; fixtures isolated",
-    "lastChecked": null,
-    "notes": "Not yet reviewed. URL is a starting point from the inventory, not access authorization."
+    "lastChecked": "2026-11-16",
+    "notes": "Official overview reviewed; REST API documents APIKEY header and HTTPS. Plan pricing, quotas, retention and redistribution unverified, so guard OFF. No live request."
   },
   {
     "id": "dotdb",
@@ -253,14 +253,14 @@
     "storage": "No redistribution assumed; owner-only until rights established",
     "fallback": "User-authorized CSV/JSON with evidence URL, timestamp and permission; fixtures isolated",
     "lastChecked": "2026-11-16",
-    "notes": "Official /api URL could not be fetched. Needs official plan/terms verification; no scraping."
+    "notes": "API inaccessible and terms endpoint 403 on 2026-11-16. Typed normalized/manual contract and disabled guard only; no scraping or plan purchase."
   },
   {
     "id": "internet-archive-wayback-cdx",
     "name": "Internet Archive Wayback CDX",
     "url": "https://github.com/internetarchive/wayback/tree/master/wayback-cdx-server",
     "milestone": 2,
-    "status": "not_started",
+    "status": "fixture_only",
     "flag": "INTERNET_ARCHIVE_WAYBACK_CDX_ENABLED",
     "enabled": false,
     "auth": "Pending official verification",
@@ -269,14 +269,14 @@
     "storage": "No redistribution assumed; owner-only until rights established",
     "fallback": "User-authorized CSV/JSON with evidence URL, timestamp and permission; fixtures isolated",
     "lastChecked": "2026-11-16",
-    "notes": "Official upstream documentation accessible. Documentation existence is not clearance for unrestricted storage of archived content."
+    "notes": "Official CDX index documentation reviewed; terms page could not be inspected without JavaScript. CDX index parser fixture tested, content assessments explicitly manual; no live fetch or archived-content storage rights assumed."
   },
   {
     "id": "namebio",
     "name": "NameBio",
     "url": "https://namebio.com/",
     "milestone": 2,
-    "status": "not_started",
+    "status": "blocked",
     "flag": "NAMEBIO_ENABLED",
     "enabled": false,
     "auth": "Pending official verification",
@@ -284,15 +284,15 @@
     "quota": "Unknown; default 0 upstream requests until vetted",
     "storage": "No redistribution assumed; owner-only until rights established",
     "fallback": "User-authorized CSV/JSON with evidence URL, timestamp and permission; fixtures isolated",
-    "lastChecked": null,
-    "notes": "Not yet reviewed. URL is a starting point from the inventory, not access authorization."
+    "lastChecked": "2026-11-16",
+    "notes": "Official site 403 on 2026-11-16. No bulk API assumed. Normalized manual sold-report contract; no sale seed imported."
   },
   {
     "id": "dnjournal",
     "name": "DNJournal",
     "url": "https://www.dnjournal.com/",
     "milestone": 2,
-    "status": "not_started",
+    "status": "manual_only",
     "flag": "DNJOURNAL_ENABLED",
     "enabled": false,
     "auth": "Pending official verification",
@@ -300,8 +300,8 @@
     "quota": "Unknown; default 0 upstream requests until vetted",
     "storage": "No redistribution assumed; owner-only until rights established",
     "fallback": "User-authorized CSV/JSON with evidence URL, timestamp and permission; fixtures isolated",
-    "lastChecked": null,
-    "notes": "Not yet reviewed. URL is a starting point from the inventory, not access authorization."
+    "lastChecked": "2026-11-16",
+    "notes": "Official sales report page accessible 2026-11-16. No automated/bulk redistribution right inferred. Only owner-permitted manual reports with URLs, dates and reported-vs-direct confirmation."
   },
   {
     "id": "namepros",
@@ -452,7 +452,7 @@
     "name": "Google Maps Places",
     "url": "https://developers.google.com/maps/documentation/places/web-service/policies",
     "milestone": 2,
-    "status": "not_started",
+    "status": "blocked",
     "flag": "GOOGLE_MAPS_PLACES_ENABLED",
     "enabled": false,
     "auth": "Pending official verification",
@@ -460,15 +460,15 @@
     "quota": "Unknown; default 0 upstream requests until vetted",
     "storage": "No redistribution assumed; owner-only until rights established",
     "fallback": "User-authorized CSV/JSON with evidence URL, timestamp and permission; fixtures isolated",
-    "lastChecked": null,
-    "notes": "Not yet reviewed. URL is a starting point from the inventory, not access authorization."
+    "lastChecked": "2026-11-16",
+    "notes": "Official policies reviewed 2026-11-16: prefetch/cache/storage restricted except defined exceptions (place IDs). No permission to persist results assumed; no integration activated. Keep attribution and storage policy requirements for future review."
   },
   {
     "id": "u-s-census-bureau-api",
     "name": "U.S. Census Bureau API",
     "url": "https://www.census.gov/data/developers.html",
     "milestone": 2,
-    "status": "not_started",
+    "status": "blocked",
     "flag": "U_S_CENSUS_BUREAU_API_ENABLED",
     "enabled": false,
     "auth": "Pending official verification",
@@ -476,15 +476,15 @@
     "quota": "Unknown; default 0 upstream requests until vetted",
     "storage": "No redistribution assumed; owner-only until rights established",
     "fallback": "User-authorized CSV/JSON with evidence URL, timestamp and permission; fixtures isolated",
-    "lastChecked": null,
-    "notes": "Not yet reviewed. URL is a starting point from the inventory, not access authorization."
+    "lastChecked": "2026-11-16",
+    "notes": "Official API terms page reviewed. Actual dataset/vintage/geographic fields, current key/rate/retention terms must be checked before a bounded live adapter. Source-stamped manual demographic inputs supported; no live request."
   },
   {
     "id": "google-ads-keyword-planner",
     "name": "Google Ads Keyword Planner",
     "url": "https://developers.google.com/google-ads/api/docs/keyword-planning/overview",
     "milestone": 2,
-    "status": "not_started",
+    "status": "blocked",
     "flag": "GOOGLE_ADS_KEYWORD_PLANNER_ENABLED",
     "enabled": false,
     "auth": "Pending official verification",
@@ -492,8 +492,8 @@
     "quota": "Unknown; default 0 upstream requests until vetted",
     "storage": "No redistribution assumed; owner-only until rights established",
     "fallback": "User-authorized CSV/JSON with evidence URL, timestamp and permission; fixtures isolated",
-    "lastChecked": null,
-    "notes": "Not yet reviewed. URL is a starting point from the inventory, not access authorization."
+    "lastChecked": "2026-11-16",
+    "notes": "Official keyword-planning documentation reviewed. Authentication/account access, current quotas/pricing and storage/redistribution requirements not yet proven. No API call; manually licensed demand/CPC facts only."
   },
   {
     "id": "u-s-sba",
@@ -791,9 +791,9 @@
     "status": "implemented_needs_key",
     "flag": "TELEGRAM_ENABLED",
     "enabled": false,
-    "auth": "Pending official verification",
-    "pricing": "Unknown; no paid activation approved",
-    "quota": "Unknown; default 0 upstream requests until vetted",
+    "auth": "One owner BotFather token and verified webhook secret; per-account consented one-time link",
+    "pricing": "Normal messages free; paid broadcast explicitly disabled",
+    "quota": "Local conservative cap 20/account/UTC day; provider FAQ reviewed, production sender coordination deferred",
     "storage": "No redistribution assumed; owner-only until rights established",
     "fallback": "User-authorized CSV/JSON with evidence URL, timestamp and permission; fixtures isolated",
     "lastChecked": "2026-11-16",

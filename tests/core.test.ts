@@ -45,7 +45,7 @@ test('rule schema, nested AND/OR, null handling, acronym eligibility and trend r
 });
 test('per-user saved rules are isolated and versioned; edits and deletes denied cross-user',t=>{
  const s=new Store();t.after(()=>s.db.close());const a=s.createUser('a@example.com','test-only-long-passphrase','owner'),b=s.createUser('b@example.com','test-only-long-passphrase');const r=s.saveRule(a,baseRule());
- assert.equal(s.rules(b).length,0);assert.throws(()=>s.saveRule(b,baseRule(),r.id));assert.throws(()=>s.toggleRule(b,r.id,false));assert.throws(()=>s.deleteRule(b,r.id));assert.equal(s.saveRule(a,{...baseRule(),name:'Updated'},r.id).version,2);assert.equal(Number(s.db.prepare('SELECT count(*) AS n FROM rule_versions').get()!.n),2);
+ assert.equal(s.rules(b).length,0);assert.throws(()=>s.saveRule(b,baseRule(),r.id));assert.throws(()=>s.toggleRule(b,r.id,false));assert.throws(()=>s.deleteRule(b,r.id));assert.equal(s.saveRule(a,{...baseRule(),name:'Updated'},r.id).version,2);assert.equal(Number(s.db.prepare('SELECT count(*) AS n FROM rule_versions').get()!.n),2);s.toggleRule(a,r.id,false);assert.equal(s.saveRule(a,{...baseRule(),name:'Still paused'},r.id).enabled,false);
 });
 test('Lagos daily schedule, quiet hours, weekly gating and same-day dedupe',()=>{
  const r=baseRule();assert(scheduleDue(r,now,null));assert.equal(scheduleDue(r,now,now.toISOString()),false);assert.equal(scheduleDue(r,new Date('2026-11-16T22:00:00Z'),null),false);r.schedule.frequency='weekly';assert(scheduleDue(r,now,null));assert.equal(scheduleDue(r,new Date('2026-11-17T08:05:00Z'),null),false);
@@ -79,7 +79,7 @@ test('durable jobs lease, retries/dead letter, checkpoint and absolute daily/mon
 });
 
 test('file database migrations safely reopen; empty research contracts and unchecked trademark constraint',t=>{
- const path=join(mkdtempSync(join(tmpdir(),'domscout-migrations-')),'test.sqlite');let s=new Store(path);assert.equal(Number(s.db.prepare('SELECT count(*) AS n FROM migrations').get()!.n),3);s.db.close();s=new Store(path);t.after(()=>s.db.close());assert.equal(Number(s.db.prepare('SELECT count(*) AS n FROM migrations').get()!.n),3);
+ const path=join(mkdtempSync(join(tmpdir(),'domscout-migrations-')),'test.sqlite');let s=new Store(path);assert.equal(Number(s.db.prepare('SELECT count(*) AS n FROM migrations').get()!.n),4);s.db.close();s=new Store(path);t.after(()=>s.db.close());assert.equal(Number(s.db.prepare('SELECT count(*) AS n FROM migrations').get()!.n),4);
  for(const name of ['companies','domain_statuses','tld_observations','history_evidence','sales_comps','trademark_checks','keywords','trend_snapshots','tld_snapshots','scores','review_decisions','purchases','expenses','outcomes','investor_opinions'])assert.equal(Number(s.db.prepare('SELECT count(*) AS n FROM '+name).get()!.n),0);
 });
 test('refresh-only observations do not trigger new alerts but a material price change does',t=>{
@@ -90,4 +90,8 @@ test('refresh-only observations do not trigger new alerts but a material price c
 test('company-gap promotion remains blocked before alternative-use evidence gates',t=>{
  const s=new Store();t.after(()=>s.db.close());const a=s.createUser('company@example.com','test-only-long-passphrase','owner');link(s,a,123);const r=baseRule();r.group={op:'and',conditions:[{field:'length',op:'gte',value:3}]};r.schedule.frequency='instant';s.saveRule(a,r);s.import([{...manual(),category:'Company gap'}],a);s.review(s.records(a)[0].id,a);assert.equal(enqueueMatches(s,a,now).queued,0);
  const d=s.records(a)[0];const domain=s.db.prepare('SELECT id FROM domains WHERE domain=?').get(d.domain)!;s.db.prepare('INSERT INTO trademark_checks(id,domain_id,tenant_id,observed_at) VALUES (?,?,?,?)').run('test-unchecked',domain.id as string,a.tenantId,now.toISOString());assert.equal(s.db.prepare('SELECT outcome FROM trademark_checks').get()!.outcome,'not_checked');assert.throws(()=>s.db.prepare("UPDATE trademark_checks SET outcome='clear'").run());
+});
+
+test('international suffix roots and visible punctuation do not confuse Punycode encoding with name content',t=>{
+ const n=normalize('пример.рф');assert.equal(n.length,6);assert.equal(n.hasHyphen,false);assert.equal(n.hasDigit,false);const path=join(mkdtempSync(join(tmpdir(),'domscout-idn-')),'test.sqlite');let s=new Store(path);t.after(()=>s.db.close());const p=s.createUser('idn@example.com','test-only-long-passphrase','owner');s.import([manual('пример.рф')],p);assert.equal(s.db.prepare('SELECT unicode_root FROM roots').get()!.unicode_root,'пример');s.db.prepare("UPDATE roots SET unicode_root=''").run();s.db.close();s=new Store(path);assert.equal(s.db.prepare('SELECT unicode_root FROM roots').get()!.unicode_root,'пример');
 });

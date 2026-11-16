@@ -8,18 +8,18 @@ Statuses: live_verified, implemented_needs_key, fixture_only, manual_only, block
 |---|---|---|---|
 |1|1|manual_only|Partial M0/M1 delivery; line inventory and acceptance ledger below preserve all remaining gaps.|
 |2|1|manual_only|Partial M0/M1 delivery; line inventory and acceptance ledger below preserve all remaining gaps.|
-|3|2|not_started|Line inventory in research-requirements.json; implementation pending.|
-|4|2|not_started|Line inventory in research-requirements.json; implementation pending.|
+|3|2|manual_only|M2 private manual evidence/scoring; API feeds OFF; see M2 gaps below and line inventory.|
+|4|2|manual_only|M2 private manual evidence/scoring; API feeds OFF; see M2 gaps below and line inventory.|
 |5|3|not_started|Line inventory in research-requirements.json; implementation pending.|
-|6|2|not_started|Line inventory in research-requirements.json; implementation pending.|
-|7|2|not_started|Line inventory in research-requirements.json; implementation pending.|
-|8|2|not_started|Line inventory in research-requirements.json; implementation pending.|
+|6|2|manual_only|M2 private manual evidence/scoring; API feeds OFF; see M2 gaps below and line inventory.|
+|7|2|manual_only|M2 private manual evidence/scoring; API feeds OFF; see M2 gaps below and line inventory.|
+|8|2|manual_only|M2 private manual evidence/scoring; API feeds OFF; see M2 gaps below and line inventory.|
 |9|4|not_started|Line inventory in research-requirements.json; implementation pending.|
 |10|4|not_started|Line inventory in research-requirements.json; implementation pending.|
-|11|2|not_started|Line inventory in research-requirements.json; implementation pending.|
+|11|2|manual_only|M2 private manual evidence/scoring; API feeds OFF; see M2 gaps below and line inventory.|
 |12|3|not_started|Line inventory in research-requirements.json; implementation pending.|
 |13|Future owner approval|deferred|Full workflow deferred_by_owner; disclaimer and not_checked contract required.|
-|14|2|not_started|Line inventory in research-requirements.json; implementation pending.|
+|14|2|manual_only|M2 private manual evidence/scoring; API feeds OFF; see M2 gaps below and line inventory.|
 |15|5|not_started|Line inventory in research-requirements.json; implementation pending.|
 |16|5|not_started|Line inventory in research-requirements.json; implementation pending.|
 |17|0|manual_only|Partial M0/M1 delivery; line inventory and acceptance ledger below preserve all remaining gaps.|
@@ -40,7 +40,7 @@ Statuses: live_verified, implemented_needs_key, fixture_only, manual_only, block
 - No video workflows or assets.
 
 ## Twelve score dimensions
-M2: brandability, geo service, exact match, cleanliness, stability, extension adoption, comparable sales, commercial intent, replacement cost. M3: company gap, end-user count. M4: trend. All remain not_started; unknown values remain null.
+M2: brandability, geo service, exact match, cleanliness, stability, extension adoption, comparable sales, commercial intent and replacement cost now implemented for private manual/fixture evidence. M3 company gap/end-user count and M4 trend remain not_started. All twelve slots preserve null/unknown, coverage, confidence, evidence, risks and next action; no live/calibrated probability claim.
 
 ## Providers
 Every named provider is inventoried in SOURCE_REGISTRY.md and source-registry.json, including deferred legal registries. Unreviewed entries have no access authorization.
@@ -69,3 +69,11 @@ M1 limitations for later gates: registrar availability confirmation, actual RDAP
 |Public source rights|license allowlist + projection tests|fixture_only|
 |No payment, WhatsApp disconnected|OFF defaults and disabled UI/routes|fixture_only|
 |No commercial connectors required|offline checks and manual import browser flow|manual_only|
+
+## Milestone 2 delivered manual research
+
+src/research.ts and research-store.ts, config/scoring-v1.json, migration 004, private scorecard/editor and tests/research.test.ts now implement nine evidence-gated dimensions, exact TLD/completeness semantics, unreviewed CDX parsing, manual history review, sales-vs-listing and report-vs-primary provenance, specialized geo/EMD models with currency/units, name subtype suggestions and manual multi-label overrides, initialism exemptions, configurable soft lengths/weights/coverage, immutable snapshots and strategy ranking with nulls last. Repeated underlying sales/snapshots do not inflate coverage. Old sales decay, unrelated service comps exclude, unknown backlinks stay unknown and adverse assessed quality blocks promotion. Research imports require fresh review; private adverse evidence removes public exposure/cancels pending alerts. Raw research and model configurations remain private.
+
+Evidence: tests/research.test.ts, research HTTP test, existing browser import/scorecard flow, docs/qa/m2-scorecard-desktop.png and mobile.png. Current M2 gate records in PROGRESS.md and docs/qa/m2-review.md. All owner reference names (ABMC, ZayaPay, BluebirdHQ, AuthenTalk, GetBlocky, Nexora) plus nonsensical negative case have synthetic regression evidence only. No historical sale claim, availability or real company was seeded.
+
+Remaining M2 access limits: no live DotDB/Namecheap/Census/Wayback/sales or commercial history transport; disabled guards and typed normalized contracts/manual import only. No pronunciation dictionary or claimed linguistic verification; operator-reviewed judgments, small original structure vocabulary and explicit limitations. No automatic web-content classification/security clearance. Restricted fields remain private; scorecard results are not yet joined into shared search filters or Telegram payloads until source-rights/delivery contracts permit them. Confidence and weights are unvalidated research heuristics, not calibrated statistics or valuation. Source-specific licensing/TTL and data redistribution stay a per-adapter activation gate. Full cross-category shortlist, API product, advanced UI and outcome calibration are later milestones.

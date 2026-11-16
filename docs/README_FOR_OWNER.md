@@ -1,28 +1,40 @@
-# What works now
+# DomScout owner handoff
 
-M0 and M1 local/manual vertical slice. No live provider feed, real Telegram delivery, verified market data, deployment or billing. No video work.
+Current checkpoint: M0–M2 local/manual/fixture path. No live source, real Telegram delivery, verified market dataset, deployment or billing. No video. The full master build remains unfinished; next gate is M3.
 
-Working: original white/orange workspace and SVG/PNG identity; persistent authorized CSV/JSON imports and raw evidence; normalized IDN/public suffix/roots; search/filter/multi-sort/pagination/compare; private sessions, watchlists, saved searches and versioned nested rules; Lagos schedules, quiet hours, previews, link/unlink contracts; reviewed nonfixture outbox with per-user/material dedupe; leased jobs, retries/dead letter and tested zero-spend helper. Three migrations include empty future research contracts; they are not populated features. Company-gap promotion blocked until M3 evidence gates.
+Working now: original white/orange workspace and vector/PNG brand; durable authorized CSV/JSON intake and original raw evidence; IDN/suffix normalization; public empty/sample views; private local sessions, watchlist, multi-sort/filter/pagination/compare; account-specific saved searches/nested rules with Lagos schedules/quiet hours/previews; shared Telegram linking/outbox contracts; leased jobs/retries/dead letter and zero-spend helper; nine source-stamped manual scoring dimensions with unknown/coverage gates, flexible brandable labels and immutable scorecards. Company-gap/end-user/trend values stay null pending their modules. All source flags OFF. Tests use isolated fixture data, never actual opportunities or sales.
 
-```
+## Run locally
+
+```sh
 npm ci
 npm run check
 npm run owner:create -- owner@example.com
 npm run dev
 ```
 
-Local URL http://127.0.0.1:4310. Public starts empty; Explore samples deliberately opens fixtures. Use the owner account for genuine authorized imports. No default production password. For browser acceptance run `npm run test:browser` after build; installed Chromium or CHROME_PATH required.
+Open http://127.0.0.1:4310. Public starts empty; Explore samples is explicit fixture mode. Create your own owner passphrase interactively (hidden input, no default account/password), then sign in and import data you may lawfully store. A record's Research scorecard opens manual evidence entry; empty inputs remain unknown. Schema/methods: RESEARCH_INPUT.md. CLI and job operations: OPERATIONS.md. No keys needed for local/manual/fixture use.
 
-Verification: M0 two preservation/configuration tests; M1 19 core/HTTP tests, TypeScript/build, four Playwright flows, three viewport captures, initial/fix-list independent design review. See docs/qa/, tests/, docs/OPERATIONS.md. Git checkpoint history and precise current gate in PROGRESS.md. Hallmark static zero FAIL; Puppeteer render tier unavailable, actual Playwright evidence inspected. No claim that a fixture verifies live access.
+## Verification and assets
 
-Assets: public/brand/ (editable primary/icon/wordmark SVGs, PNGs, light/dark variants, 192/512 app icons, OG/social/GitHub preview), public/favicon.ico; font OFL included. Main UI is light mode; no dark-mode UI shipped.
+M0 two tests; M1 19 tests + four browser flows; current M2 37 core/API tests + typecheck/build, four browser flows and inspected desktop/tablet/mobile views plus private scorecard captures. Independent design reviews found and resolved scoped fixes; complete M6 or launch approval is not claimed. Hallmark static zero FAIL; Puppeteer render unavailable, Playwright evidence used. See docs/qa/, PROGRESS.md and git log for actual results/commits.
 
-Credentials you need now: none for manual/fixture research. For real Telegram later, one owner bot from official BotFather; token, bot username, webhook secret, encryption key and HTTPS host. Normal Telegram sends free within provider limits; paid broadcast disabled. Setup in OPERATIONS.md. Never send fixture opportunities as real alerts.
+Brand files: public/brand/logo-light.svg, logo-dark.svg, icon.svg, icon-dark.svg, wordmark variants, matching PNG exports, 192/512 app icons, og/social/github-preview SVG+PNG; public/favicon.ico. Original authoring scripts under scripts/, IBM Plex Sans OFL included. Main app light mode, no dark UI or video assets.
 
-GoDaddy: current inventory endpoint/access/redistribution not verified (older Auctions URL 404); no key purchase recommended. Dynadot: Tools > API gives key+secret for documented REST beta; auction access, current quotas, costs and redistribution must still be reviewed. RDAP requires endpoint policy/retention review before adding live transport; no key is used by the current parser. DotDB API review inaccessible; sales/company/trend/geo providers remain unactivated, with source inventory and unknown prices in SOURCE_REGISTRY.md. Do not subscribe to paid plans yet.
+## Accounts / keys
 
-No live-source smoke command exists because no source is live. Run offline tests and import a record you can lawfully use; that exercises the whole review path. A later connector must have its own real smoke check and rights evidence before status can become live_verified.
+None required now. For real Telegram later: create one owner bot with official BotFather https://core.telegram.org/bots#botfather; configure TELEGRAM_BOT_TOKEN, TELEGRAM_BOT_USERNAME, TELEGRAM_WEBHOOK_SECRET, CREDENTIAL_ENCRYPTION_KEY and HTTPS PUBLIC_ORIGIN, register verified webhook and set TELEGRAM_ENABLED only when ready. Users link through the shared bot with a one-time private-chat proof; no personal bot token. Normal Telegram messages free within official limits; paid broadcast disabled. Actual delivery remains unverified. OPERATIONS.md has setup/rotation/uncertain-delivery handling.
 
-Next: M2 evidence/scoring vertical slice with all revised brandable subtypes, licensed/manual extension/history/comps/geo inputs, null/coverage gates, explanation and regression vectors. Public onboarding, API keys/quotas, production jobs/deployment are M7; WhatsApp/email/entitlements/billing stub M7B; final 24-section reconciliation M8. Trademark full workflow deferred_by_owner. API, billing, WhatsApp remain OFF. This is not the complete master build.
+GoDaddy: current inventory access/rights unresolved, no paid signup recommended. Dynadot: API Key + Secret under Tools > API, official REST beta docs https://www.dynadot.com/domain/api-document ; auction eligibility, pricing/quotas/redistribution still unverified. DotDB/NameBio access denied review; commercial history plans OFF. Census/demand/business sources need per-dataset terms and authentic fields before live integration; Google Places retention restrictions apply. All other providers, precise verified notes, unknown costs and needed access are in SOURCE_REGISTRY.md. Do not subscribe to paid tools yet.
 
-Resume verification in one command: `npm run resume` (runs checks; does not pretend to implement later milestones automatically). Resume development by reading docs/MASTER_SPEC.md, docs/RESEARCH_COVERAGE.md and PROGRESS.md and taking the next open gate.
+No live-source smoke command exists because no source is live. Offline checks plus an authorized owner import/review demonstrate the current pipeline; each later activated connector needs its own credentialed smoke and rights proof before live_verified.
+
+## Resume
+
+Verification only: `npm run resume`. Full next task is M3 in PROGRESS.md. One command to open Codex in the correct repository and continue:
+
+```sh
+codex -C /home/sopski/projects/DomScout "Read PROGRESS.md, docs/MASTER_SPEC.md and docs/RESEARCH_COVERAGE.md. Resume the next gated milestone with a passing baseline. Preserve no-video, trademark deferral, tenant privacy, source licensing and zero paid activation. Test, visually inspect frontend changes, commit and push each passing milestone."
+```
+
+M4–M8 remain after M3, including trends/TLD intelligence, outcome learning, complete customer/admin UI, secure developer API, production operations/deployment, channels/entitlements and full audit. API/billing/WhatsApp remain disabled. No automatic bids or purchases.

@@ -20,3 +20,9 @@ test('HTTP denies cross-account rule access and invalid sessions; no private/raw
  store.import([{...fixtureRows[0],observedAt:new Date().toISOString()}],owner);const d=store.records(owner)[0];assert.equal((await request('/api/domains/'+d.id,undefined,b)).status,404);assert.equal((await request('/api/domains/'+d.id)).status,404);assert.equal((await request('/api/health')).status,200);assert.equal((await(await request('/api/health')).json()).jobs.length,0);
  const bad=await request('/api/import',{format:'json',content:'[]'},b);assert.equal(bad.status,403);assert.equal((await request('/api/logout',{},a)).status,200);assert.equal((await request('/api/rules',undefined,a)).status,401);
 });
+
+test('research API preserves tenant isolation, fixtures never persist and malformed bundles fail before writes',async t=>{
+ const {request,login,store,owner}=await setup(t);const a=await login('a@example.com'),b=await login('b@example.com');store.import([{...fixtureRows[0],observedAt:new Date().toISOString()}],owner);const d=store.records(owner)[0];const bundle={schemaVersion:1,domain:d.domain,dataset:'manual',subtypes:[],metrics:{},extensions:null,history:[],sales:[]};
+ const saved=await request('/api/research',{id:d.id,bundle},a);assert.equal(saved.status,200);assert.equal((await saved.json()).result.scores.cleanliness.value,null);assert.equal((await request('/api/research/'+d.id,undefined,b)).status,404);assert.equal((await request('/api/research/'+d.id)).status,401);assert.equal((await request('/api/research',{id:d.id,bundle},b)).status,404);
+ assert.equal((await request('/api/research',{id:d.id,bundle:{...bundle,dataset:'fixture'}},a)).status,400);const preview=await request('/api/research/preview',{label:d.root,bundle:{...bundle,dataset:'fixture'}},a);assert.equal(preview.status,200);assert.equal((await preview.json()).persisted,false);
+});

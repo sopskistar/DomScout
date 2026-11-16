@@ -8,5 +8,5 @@ export function normalize(input: unknown) {
  const info=parse(ascii,{allowPrivateDomains:true});
  if (!info.domain || !info.publicSuffix || !info.isIcann) fail('invalid_suffix','A recognized ICANN registrable domain is required.');
  const root=info.domainWithoutSuffix!;const unicode=domainToUnicode(info.domain);
- return {domain:info.domain, unicode, root, tld:info.publicSuffix, length:Array.from(domainToUnicode(root)).length, hasHyphen:root.includes('-'),hasDigit:/\d/.test(root)};
+ return {domain:info.domain, unicode, root, tld:info.publicSuffix, length:Array.from(domainToUnicode(root)).length, hasHyphen:domainToUnicode(root).includes('-'),hasDigit:/\d/.test(domainToUnicode(root))};
 }

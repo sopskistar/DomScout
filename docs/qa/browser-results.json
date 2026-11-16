@@ -94,7 +94,7 @@
       "url": "http://127.0.0.1:4310/api/session",
       "reuseExistingServer": false,
       "env": {
-        "DATABASE_PATH": "/tmp/domscout-browser-624a7b95-64d8-4abf-a381-c5cfcc02bd5f.sqlite",
+        "DATABASE_PATH": "/tmp/domscout-browser-26b0c088-5f2b-4ade-a3bc-cfb5a5cbfa4a.sqlite",
         "PUBLIC_ORIGIN": "http://127.0.0.1:4310",
         "PORT": "4310"
       }
@@ -123,12 +123,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2094,
+                  "duration": 4041,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-16T16:00:14.652Z",
+                  "startTime": "2026-11-16T18:18:47.964Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -157,12 +157,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2451,
+                  "duration": 3751,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-16T16:00:17.389Z",
+                  "startTime": "2026-11-16T18:18:53.692Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -191,12 +191,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2566,
+                  "duration": 3733,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-16T16:00:19.875Z",
+                  "startTime": "2026-11-16T18:18:57.536Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -225,12 +225,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2118,
+                  "duration": 3443,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-16T16:00:22.463Z",
+                  "startTime": "2026-11-16T18:19:00.615Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -248,8 +248,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-11-16T16:00:12.705Z",
-    "duration": 12058.526,
+    "startTime": "2026-11-16T18:18:42.601Z",
+    "duration": 22507.945,
     "expected": 4,
     "skipped": 0,
     "unexpected": 0,

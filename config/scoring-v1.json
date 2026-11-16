@@ -1,0 +1,68 @@
+{
+  "version": "research-heuristics-1",
+  "minimumCoverage": 0.6,
+  "length": {
+    "min": 3,
+    "max": 20
+  },
+  "allowHyphens": false,
+  "allowDigits": false,
+  "subtypeLengths": {},
+  "weights": {
+    "brandability": {
+      "shortness": 10,
+      "readability": 10,
+      "meaning": 12,
+      "recall": 12,
+      "deliberateSpelling": 10,
+      "communication": 10,
+      "adaptability": 10,
+      "pronounceability": 8,
+      "syllableCount": 6,
+      "startupFit": 6,
+      "salesSupport": 3,
+      "historySupport": 3
+    },
+    "geo_service": {
+      "population": 12,
+      "income": 10,
+      "homeValue": 8,
+      "buyerCount": 18,
+      "commercialIntent": 18,
+      "searchVolume": 8,
+      "cpc": 4,
+      "keywordClarity": 10,
+      "salesSupport": 12,
+      "providerCompetition": 0,
+      "industryStrength": 0
+    },
+    "exact_match": {
+      "keywordClarity": 20,
+      "commercialIntent": 24,
+      "searchVolume": 10,
+      "cpc": 4,
+      "buyerCount": 18,
+      "readability": 10,
+      "salesSupport": 14
+    },
+    "stability": {
+      "registrationAgeYears": 24,
+      "observedDrops": 24,
+      "legitimateUseYears": 28,
+      "sameBusinessYears": 24
+    },
+    "replacement_cost": {
+      "alternativeScarcity": 35,
+      "meaning": 20,
+      "recall": 15,
+      "communication": 15,
+      "salesSupport": 15
+    },
+    "commercial_intent": {
+      "commercialIntent": 70,
+      "cpc": 10,
+      "searchVolume": 10,
+      "buyerCount": 10
+    }
+  }
+}

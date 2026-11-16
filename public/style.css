@@ -23,3 +23,6 @@ h1,h2{text-wrap:balance}.primary:active{background:var(--accent-hover)}.secondar
 
 .compare-hit{display:inline-flex;align-items:center;justify-content:center;min-width:24px;min-height:24px}.watch-btn{width:40px;height:40px}
 @media(max-width:760px){.compare-hit{min-width:44px;min-height:44px}.primary,.secondary,.quiet,.icon-button,select,input:not([type="checkbox"]){min-height:44px}.watch-btn{width:44px;height:44px}}
+
+.scorecard-table td{height:44px}.scorecard-table th{height:40px}
+@media(max-width:760px){.scorecard-table,.scorecard-table tbody{display:block}.scorecard-table thead{position:absolute;width:1px;height:1px;overflow:clip;clip-path:inset(50%);white-space:nowrap}.scorecard-table tr{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-3);padding:var(--space-4) 0;border-bottom:1px solid var(--border)}.scorecard-table td{height:auto;border:0;padding:0;white-space:normal}.scorecard-table td:first-child{grid-column:1/-1;font-weight:600}.scorecard-table td[data-label]{display:flex;flex-direction:column;gap:var(--space-1)}.scorecard-table td[data-label]::before{content:attr(data-label);font-size:12px;color:var(--muted)}}

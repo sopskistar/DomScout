@@ -926,7 +926,7 @@
     "requirement": "Acquisition method.",
     "milestone": 1,
     "status": "manual_only",
-    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "reason": "Original raw import field retained; typed normalized acquisition/lifecycle views remain M5/M6 work.",
     "evidence": [
       "src/import.ts"
     ],
@@ -1904,10 +1904,18 @@
     "line": 172,
     "requirement": "Domain Cleanliness Score",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M2 sourced manual/fixture scoring and review; no live provider verification, complete dictionary or trained probability claim.",
+    "evidence": [
+      "src/research.ts",
+      "src/research-store.ts",
+      "config/scoring-v1.json",
+      "docs/RESEARCH_INPUT.md"
+    ],
+    "tests": [
+      "tests/research.test.ts",
+      "tests/browser/workspace.spec.ts"
+    ]
   },
   {
     "id": "R03-L0173",
@@ -1959,10 +1967,18 @@
     "line": 177,
     "requirement": "No obvious abuse in available history\tPositive",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M2 sourced manual/fixture scoring and review; no live provider verification, complete dictionary or trained probability claim.",
+    "evidence": [
+      "src/research.ts",
+      "src/research-store.ts",
+      "config/scoring-v1.json",
+      "docs/RESEARCH_INPUT.md"
+    ],
+    "tests": [
+      "tests/research.test.ts",
+      "tests/browser/workspace.spec.ts"
+    ]
   },
   {
     "id": "R03-L0178",
@@ -2003,13 +2019,17 @@
     "line": 181,
     "requirement": "Insufficient historical evidence\tUnknown; do not assume clean",
     "milestone": 2,
-    "status": "fixture_only",
-    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "status": "manual_only",
+    "reason": "M2 sourced manual/fixture scoring and review; no live provider verification, complete dictionary or trained probability claim.",
     "evidence": [
-      "src/import.ts"
+      "src/research.ts",
+      "src/research-store.ts",
+      "config/scoring-v1.json",
+      "docs/RESEARCH_INPUT.md"
     ],
     "tests": [
-      "tests/core.test.ts"
+      "tests/research.test.ts",
+      "tests/browser/workspace.spec.ts"
     ]
   },
   {
@@ -2018,13 +2038,17 @@
     "line": 182,
     "requirement": "A lack of archived pages does not prove that a domain is clean.",
     "milestone": 2,
-    "status": "fixture_only",
-    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "status": "manual_only",
+    "reason": "M2 sourced manual/fixture scoring and review; no live provider verification, complete dictionary or trained probability claim.",
     "evidence": [
-      "src/import.ts"
+      "src/research.ts",
+      "src/research-store.ts",
+      "config/scoring-v1.json",
+      "docs/RESEARCH_INPUT.md"
     ],
     "tests": [
-      "tests/core.test.ts"
+      "tests/research.test.ts",
+      "tests/browser/workspace.spec.ts"
     ]
   },
   {
@@ -2209,10 +2233,18 @@
     "line": 199,
     "requirement": "Similar syllable count.",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M2 sourced manual/fixture scoring and review; no live provider verification, complete dictionary or trained probability claim.",
+    "evidence": [
+      "src/research.ts",
+      "src/research-store.ts",
+      "config/scoring-v1.json",
+      "docs/RESEARCH_INPUT.md"
+    ],
+    "tests": [
+      "tests/research.test.ts",
+      "tests/browser/workspace.spec.ts"
+    ]
   },
   {
     "id": "R04-L0200",
@@ -2319,10 +2351,18 @@
     "line": 209,
     "requirement": "Similar domain structures.",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M2 sourced manual/fixture scoring and review; no live provider verification, complete dictionary or trained probability claim.",
+    "evidence": [
+      "src/research.ts",
+      "src/research-store.ts",
+      "config/scoring-v1.json",
+      "docs/RESEARCH_INPUT.md"
+    ],
+    "tests": [
+      "tests/research.test.ts",
+      "tests/browser/workspace.spec.ts"
+    ]
   },
   {
     "id": "R04-L0210",
@@ -2385,10 +2425,18 @@
     "line": 215,
     "requirement": "Comparable reported sales.",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M2 sourced manual/fixture scoring and review; no live provider verification, complete dictionary or trained probability claim.",
+    "evidence": [
+      "src/research.ts",
+      "src/research-store.ts",
+      "config/scoring-v1.json",
+      "docs/RESEARCH_INPUT.md"
+    ],
+    "tests": [
+      "tests/research.test.ts",
+      "tests/browser/workspace.spec.ts"
+    ]
   },
   {
     "id": "R04-L0216",
@@ -2451,10 +2499,18 @@
     "line": 221,
     "requirement": "Comparable reported sales.",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M2 sourced manual/fixture scoring and review; no live provider verification, complete dictionary or trained probability claim.",
+    "evidence": [
+      "src/research.ts",
+      "src/research-store.ts",
+      "config/scoring-v1.json",
+      "docs/RESEARCH_INPUT.md"
+    ],
+    "tests": [
+      "tests/research.test.ts",
+      "tests/browser/workspace.spec.ts"
+    ]
   },
   {
     "id": "R04-L0222",
@@ -3699,10 +3755,18 @@
     "line": 337,
     "requirement": "Spelling simplicity\tWhether listeners can spell it after hearing it",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M2 sourced manual/fixture scoring and review; no live provider verification, complete dictionary or trained probability claim.",
+    "evidence": [
+      "src/research.ts",
+      "src/research-store.ts",
+      "config/scoring-v1.json",
+      "docs/RESEARCH_INPUT.md"
+    ],
+    "tests": [
+      "tests/research.test.ts",
+      "tests/browser/workspace.spec.ts"
+    ]
   },
   {
     "id": "R06-L0338",
@@ -3710,10 +3774,18 @@
     "line": 338,
     "requirement": "Syllable count\tPrefer approximately 2–3",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M2 sourced manual/fixture scoring and review; no live provider verification, complete dictionary or trained probability claim.",
+    "evidence": [
+      "src/research.ts",
+      "src/research-store.ts",
+      "config/scoring-v1.json",
+      "docs/RESEARCH_INPUT.md"
+    ],
+    "tests": [
+      "tests/research.test.ts",
+      "tests/browser/workspace.spec.ts"
+    ]
   },
   {
     "id": "R06-L0339",
@@ -3721,10 +3793,18 @@
     "line": 339,
     "requirement": "Memorability\tDistinctiveness and ease of recall",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M2 sourced manual/fixture scoring and review; no live provider verification, complete dictionary or trained probability claim.",
+    "evidence": [
+      "src/research.ts",
+      "src/research-store.ts",
+      "config/scoring-v1.json",
+      "docs/RESEARCH_INPUT.md"
+    ],
+    "tests": [
+      "tests/research.test.ts",
+      "tests/browser/workspace.spec.ts"
+    ]
   },
   {
     "id": "R06-L0340",
@@ -3754,10 +3834,18 @@
     "line": 342,
     "requirement": "Versatility\tNumber of plausible industries",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M2 sourced manual/fixture scoring and review; no live provider verification, complete dictionary or trained probability claim.",
+    "evidence": [
+      "src/research.ts",
+      "src/research-store.ts",
+      "config/scoring-v1.json",
+      "docs/RESEARCH_INPUT.md"
+    ],
+    "tests": [
+      "tests/research.test.ts",
+      "tests/browser/workspace.spec.ts"
+    ]
   },
   {
     "id": "R06-L0343",
@@ -3765,10 +3853,18 @@
     "line": 343,
     "requirement": "Startup fit\tCould a credible company use the name?",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M2 sourced manual/fixture scoring and review; no live provider verification, complete dictionary or trained probability claim.",
+    "evidence": [
+      "src/research.ts",
+      "src/research-store.ts",
+      "config/scoring-v1.json",
+      "docs/RESEARCH_INPUT.md"
+    ],
+    "tests": [
+      "tests/research.test.ts",
+      "tests/browser/workspace.spec.ts"
+    ]
   },
   {
     "id": "R06-L0344",
@@ -3941,10 +4037,18 @@
     "line": 359,
     "requirement": "Brand versatility",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M2 sourced manual/fixture scoring and review; no live provider verification, complete dictionary or trained probability claim.",
+    "evidence": [
+      "src/research.ts",
+      "src/research-store.ts",
+      "config/scoring-v1.json",
+      "docs/RESEARCH_INPUT.md"
+    ],
+    "tests": [
+      "tests/research.test.ts",
+      "tests/browser/workspace.spec.ts"
+    ]
   },
   {
     "id": "R06-L0360",
@@ -4326,10 +4430,18 @@
     "line": 394,
     "requirement": "Geo-Service Score metrics",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M2 sourced manual/fixture scoring and review; no live provider verification, complete dictionary or trained probability claim.",
+    "evidence": [
+      "src/research.ts",
+      "src/research-store.ts",
+      "config/scoring-v1.json",
+      "docs/RESEARCH_INPUT.md"
+    ],
+    "tests": [
+      "tests/research.test.ts",
+      "tests/browser/workspace.spec.ts"
+    ]
   },
   {
     "id": "R07-L0395",
@@ -4348,10 +4460,18 @@
     "line": 396,
     "requirement": "Median household income.",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M2 sourced manual/fixture scoring and review; no live provider verification, complete dictionary or trained probability claim.",
+    "evidence": [
+      "src/research.ts",
+      "src/research-store.ts",
+      "config/scoring-v1.json",
+      "docs/RESEARCH_INPUT.md"
+    ],
+    "tests": [
+      "tests/research.test.ts",
+      "tests/browser/workspace.spec.ts"
+    ]
   },
   {
     "id": "R07-L0397",
@@ -4359,10 +4479,18 @@
     "line": 397,
     "requirement": "Average home value.",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M2 sourced manual/fixture scoring and review; no live provider verification, complete dictionary or trained probability claim.",
+    "evidence": [
+      "src/research.ts",
+      "src/research-store.ts",
+      "config/scoring-v1.json",
+      "docs/RESEARCH_INPUT.md"
+    ],
+    "tests": [
+      "tests/research.test.ts",
+      "tests/browser/workspace.spec.ts"
+    ]
   },
   {
     "id": "R07-L0398",
@@ -4403,10 +4531,18 @@
     "line": 401,
     "requirement": "Advertising cost per click (CPC).",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M2 sourced manual/fixture scoring and review; no live provider verification, complete dictionary or trained probability claim.",
+    "evidence": [
+      "src/research.ts",
+      "src/research-store.ts",
+      "config/scoring-v1.json",
+      "docs/RESEARCH_INPUT.md"
+    ],
+    "tests": [
+      "tests/research.test.ts",
+      "tests/browser/workspace.spec.ts"
+    ]
   },
   {
     "id": "R07-L0402",
@@ -4414,10 +4550,18 @@
     "line": 402,
     "requirement": "Commercial search intent.",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M2 sourced manual/fixture scoring and review; no live provider verification, complete dictionary or trained probability claim.",
+    "evidence": [
+      "src/research.ts",
+      "src/research-store.ts",
+      "config/scoring-v1.json",
+      "docs/RESEARCH_INPUT.md"
+    ],
+    "tests": [
+      "tests/research.test.ts",
+      "tests/browser/workspace.spec.ts"
+    ]
   },
   {
     "id": "R07-L0403",
@@ -4689,10 +4833,18 @@
     "line": 427,
     "requirement": "These examples illustrate domain structures only; their current registration status and availability have not been checked.",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M2 sourced manual/fixture scoring and review; no live provider verification, complete dictionary or trained probability claim.",
+    "evidence": [
+      "src/research.ts",
+      "src/research-store.ts",
+      "config/scoring-v1.json",
+      "docs/RESEARCH_INPUT.md"
+    ],
+    "tests": [
+      "tests/research.test.ts",
+      "tests/browser/workspace.spec.ts"
+    ]
   },
   {
     "id": "R08-L0428",
@@ -6376,10 +6528,18 @@
     "line": 582,
     "requirement": "A. Domain Stability Score",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M2 sourced manual/fixture scoring and review; no live provider verification, complete dictionary or trained probability claim.",
+    "evidence": [
+      "src/research.ts",
+      "src/research-store.ts",
+      "config/scoring-v1.json",
+      "docs/RESEARCH_INPUT.md"
+    ],
+    "tests": [
+      "tests/research.test.ts",
+      "tests/browser/workspace.spec.ts"
+    ]
   },
   {
     "id": "R11-L0583",
@@ -6486,10 +6646,18 @@
     "line": 592,
     "requirement": "B. Replacement Cost Score",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M2 sourced manual/fixture scoring and review; no live provider verification, complete dictionary or trained probability claim.",
+    "evidence": [
+      "src/research.ts",
+      "src/research-store.ts",
+      "config/scoring-v1.json",
+      "docs/RESEARCH_INPUT.md"
+    ],
+    "tests": [
+      "tests/research.test.ts",
+      "tests/browser/workspace.spec.ts"
+    ]
   },
   {
     "id": "R11-L0593",
@@ -6552,10 +6720,18 @@
     "line": 598,
     "requirement": "Memorability.",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M2 sourced manual/fixture scoring and review; no live provider verification, complete dictionary or trained probability claim.",
+    "evidence": [
+      "src/research.ts",
+      "src/research-store.ts",
+      "config/scoring-v1.json",
+      "docs/RESEARCH_INPUT.md"
+    ],
+    "tests": [
+      "tests/research.test.ts",
+      "tests/browser/workspace.spec.ts"
+    ]
   },
   {
     "id": "R11-L0599",
@@ -7322,10 +7498,18 @@
     "line": 668,
     "requirement": "Geo-Service Score.",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M2 sourced manual/fixture scoring and review; no live provider verification, complete dictionary or trained probability claim.",
+    "evidence": [
+      "src/research.ts",
+      "src/research-store.ts",
+      "config/scoring-v1.json",
+      "docs/RESEARCH_INPUT.md"
+    ],
+    "tests": [
+      "tests/research.test.ts",
+      "tests/browser/workspace.spec.ts"
+    ]
   },
   {
     "id": "R14-L0669",
@@ -7333,10 +7517,18 @@
     "line": 669,
     "requirement": "Exact-Match Score.",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M2 sourced manual/fixture scoring and review; no live provider verification, complete dictionary or trained probability claim.",
+    "evidence": [
+      "src/research.ts",
+      "src/research-store.ts",
+      "config/scoring-v1.json",
+      "docs/RESEARCH_INPUT.md"
+    ],
+    "tests": [
+      "tests/research.test.ts",
+      "tests/browser/workspace.spec.ts"
+    ]
   },
   {
     "id": "R14-L0670",
@@ -7366,10 +7558,18 @@
     "line": 672,
     "requirement": "Domain Cleanliness Score.",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M2 sourced manual/fixture scoring and review; no live provider verification, complete dictionary or trained probability claim.",
+    "evidence": [
+      "src/research.ts",
+      "src/research-store.ts",
+      "config/scoring-v1.json",
+      "docs/RESEARCH_INPUT.md"
+    ],
+    "tests": [
+      "tests/research.test.ts",
+      "tests/browser/workspace.spec.ts"
+    ]
   },
   {
     "id": "R14-L0673",
@@ -7377,10 +7577,18 @@
     "line": 673,
     "requirement": "Domain Stability Score.",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M2 sourced manual/fixture scoring and review; no live provider verification, complete dictionary or trained probability claim.",
+    "evidence": [
+      "src/research.ts",
+      "src/research-store.ts",
+      "config/scoring-v1.json",
+      "docs/RESEARCH_INPUT.md"
+    ],
+    "tests": [
+      "tests/research.test.ts",
+      "tests/browser/workspace.spec.ts"
+    ]
   },
   {
     "id": "R14-L0674",
@@ -7388,10 +7596,18 @@
     "line": 674,
     "requirement": "Extension Adoption Score.",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M2 sourced manual/fixture scoring and review; no live provider verification, complete dictionary or trained probability claim.",
+    "evidence": [
+      "src/research.ts",
+      "src/research-store.ts",
+      "config/scoring-v1.json",
+      "docs/RESEARCH_INPUT.md"
+    ],
+    "tests": [
+      "tests/research.test.ts",
+      "tests/browser/workspace.spec.ts"
+    ]
   },
   {
     "id": "R14-L0675",
@@ -7399,10 +7615,18 @@
     "line": 675,
     "requirement": "Comparable Sales Score.",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M2 sourced manual/fixture scoring and review; no live provider verification, complete dictionary or trained probability claim.",
+    "evidence": [
+      "src/research.ts",
+      "src/research-store.ts",
+      "config/scoring-v1.json",
+      "docs/RESEARCH_INPUT.md"
+    ],
+    "tests": [
+      "tests/research.test.ts",
+      "tests/browser/workspace.spec.ts"
+    ]
   },
   {
     "id": "R14-L0676",
@@ -7410,10 +7634,18 @@
     "line": 676,
     "requirement": "Commercial Intent Score.",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M2 sourced manual/fixture scoring and review; no live provider verification, complete dictionary or trained probability claim.",
+    "evidence": [
+      "src/research.ts",
+      "src/research-store.ts",
+      "config/scoring-v1.json",
+      "docs/RESEARCH_INPUT.md"
+    ],
+    "tests": [
+      "tests/research.test.ts",
+      "tests/browser/workspace.spec.ts"
+    ]
   },
   {
     "id": "R14-L0677",
@@ -7443,10 +7675,18 @@
     "line": 679,
     "requirement": "Confidence level.",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M2 sourced manual/fixture scoring and review; no live provider verification, complete dictionary or trained probability claim.",
+    "evidence": [
+      "src/research.ts",
+      "src/research-store.ts",
+      "config/scoring-v1.json",
+      "docs/RESEARCH_INPUT.md"
+    ],
+    "tests": [
+      "tests/research.test.ts",
+      "tests/browser/workspace.spec.ts"
+    ]
   },
   {
     "id": "R14-L0680",
@@ -7465,10 +7705,18 @@
     "line": 681,
     "requirement": "Missing data.",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M2 sourced manual/fixture scoring and review; no live provider verification, complete dictionary or trained probability claim.",
+    "evidence": [
+      "src/research.ts",
+      "src/research-store.ts",
+      "config/scoring-v1.json",
+      "docs/RESEARCH_INPUT.md"
+    ],
+    "tests": [
+      "tests/research.test.ts",
+      "tests/browser/workspace.spec.ts"
+    ]
   },
   {
     "id": "R14-L0682",
@@ -7476,10 +7724,18 @@
     "line": 682,
     "requirement": "Major risks.",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M2 sourced manual/fixture scoring and review; no live provider verification, complete dictionary or trained probability claim.",
+    "evidence": [
+      "src/research.ts",
+      "src/research-store.ts",
+      "config/scoring-v1.json",
+      "docs/RESEARCH_INPUT.md"
+    ],
+    "tests": [
+      "tests/research.test.ts",
+      "tests/browser/workspace.spec.ts"
+    ]
   },
   {
     "id": "R14-L0683",
@@ -7487,10 +7743,18 @@
     "line": 683,
     "requirement": "Recommended next action.",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M2 sourced manual/fixture scoring and review; no live provider verification, complete dictionary or trained probability claim.",
+    "evidence": [
+      "src/research.ts",
+      "src/research-store.ts",
+      "config/scoring-v1.json",
+      "docs/RESEARCH_INPUT.md"
+    ],
+    "tests": [
+      "tests/research.test.ts",
+      "tests/browser/workspace.spec.ts"
+    ]
   },
   {
     "id": "R14-L0684",
@@ -7575,10 +7839,18 @@
     "line": 693,
     "requirement": "Domain Cleanliness Score: 92",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M2 sourced manual/fixture scoring and review; no live provider verification, complete dictionary or trained probability claim.",
+    "evidence": [
+      "src/research.ts",
+      "src/research-store.ts",
+      "config/scoring-v1.json",
+      "docs/RESEARCH_INPUT.md"
+    ],
+    "tests": [
+      "tests/research.test.ts",
+      "tests/browser/workspace.spec.ts"
+    ]
   },
   {
     "id": "R14-L0694",
@@ -7586,10 +7858,18 @@
     "line": 694,
     "requirement": "Extension Adoption Score: 71",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M2 sourced manual/fixture scoring and review; no live provider verification, complete dictionary or trained probability claim.",
+    "evidence": [
+      "src/research.ts",
+      "src/research-store.ts",
+      "config/scoring-v1.json",
+      "docs/RESEARCH_INPUT.md"
+    ],
+    "tests": [
+      "tests/research.test.ts",
+      "tests/browser/workspace.spec.ts"
+    ]
   },
   {
     "id": "R14-L0695",
@@ -7597,10 +7877,18 @@
     "line": 695,
     "requirement": "Comparable Sales Score: 63",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M2 sourced manual/fixture scoring and review; no live provider verification, complete dictionary or trained probability claim.",
+    "evidence": [
+      "src/research.ts",
+      "src/research-store.ts",
+      "config/scoring-v1.json",
+      "docs/RESEARCH_INPUT.md"
+    ],
+    "tests": [
+      "tests/research.test.ts",
+      "tests/browser/workspace.spec.ts"
+    ]
   },
   {
     "id": "R14-L0696",
@@ -7608,10 +7896,15 @@
     "line": 696,
     "requirement": "Trademark Risk: Medium",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "deferred",
+    "reason": "deferred_by_owner: illustrative active trademark outcome superseded; actual outcome always not_checked",
+    "evidence": [
+      "docs/MASTER_SPEC.md",
+      "src/types.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R14-L0697",
@@ -7795,10 +8088,18 @@
     "line": 716,
     "requirement": "For example, a domain with a high Brandable Score and low Geo-Service Score is not necessarily a bad domain. It may simply belong to a different investment category.",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M2 sourced manual/fixture scoring and review; no live provider verification, complete dictionary or trained probability claim.",
+    "evidence": [
+      "src/research.ts",
+      "src/research-store.ts",
+      "config/scoring-v1.json",
+      "docs/RESEARCH_INPUT.md"
+    ],
+    "tests": [
+      "tests/research.test.ts",
+      "tests/browser/workspace.spec.ts"
+    ]
   },
   {
     "id": "R14-L0717",

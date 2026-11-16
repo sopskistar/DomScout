@@ -1,30 +1,38 @@
-# Progress — 2026-11-16
+# DomScout progress — 2026-11-16
 
 ## Completed checkpoints
 
-M0 architecture/spec preservation and initial configuration: `c26b4fab5e50bb32ca35bc86836ad9e80a4cf1eb`, pushed origin/main. Initial README-only repository, no executable baseline. Eight requested skills found/read, shared studio references reused. Full owner brief, 24-section appendix and 1,367 nonempty research lines preserved/indexed. 53 sources inventoried with honest review/status. Two new baseline tests + typecheck/build passed. Flownix untouched.
+|Gate|Scope delivered|Tests actually run|Implementation commit|
+|---|---|---|---|
+|M0|Repository reality check, full master/24-section preservation, 1,367 research lines, 53-provider inventory, eight installed design skills, architecture/license/tenancy plan|2 tests, typecheck, build PASS|c26b4fab5e50bb32ca35bc86836ad9e80a4cf1eb (pushed)|
+|M1 local/manual|Durable authorized import/normalization/raw evidence, private sessions/rules/watchlists, search/filter/multi-sort/pagination/compare, shared-bot linking/outbox contracts, jobs/budgets, original brand + responsive UI|19 core/HTTP tests, typecheck/build and 4 browser flows PASS; desktop/tablet/mobile captures inspected; independent three-fix verdict resolved|202c6a5980ac29e4b0bfa02396165cf7f5fea1fa (pushed); log follow-up 3633bb3|
+|M2 manual/fixture|Nine specialized evidence-gated dimensions, all 12 nullable slots, source-stamped extension/history/sales/geo facts, flexible brandable subtypes, versioned private snapshots/editor/scorecard, gated enrichment guards|37 core/API tests, typecheck/build and 4 browser flows PASS; mobile scorecard corrected, actual captures inspected; independent candidate-identity fix resolved|Pending M2 commit; actual SHA recorded by follow-up log commit|
 
-M1 local/manual discovery and private-rule slice: `202c6a5980ac29e4b0bfa02396165cf7f5fea1fa`, pushed origin/main. Includes persistent IDN/suffix normalization and raw import provenance; private-by-default license partitions and explicit publication allowlist; public empty/sample views; search/filter/multi-sort/pagination/compare/evidence/watchlist; locally provisioned account sessions; per-user versioned AND/OR saved rules, unknown handling, preview, Lagos schedules/quiet hours/caps; shared Telegram one-time linking/encryption; reviewed nonfixture outbox/material dedupe; leased jobs/retries/dead letter and zero-spend reservation helper. Three transactional migrations include empty future research entity contracts. Original logo, icon, wordmark, SVG+PNG variants, favicon/app icons/OG/social/GitHub previews; self-hosted OFL font. No video.
+No provider is live_verified. Passing fixtures never changes blocked source status. This is a working local/manual research checkpoint, not completion of the entire master build.
 
-## Tests and gates
+## M2 evidence and boundaries
 
-M1: npm run check PASS: 19 core/HTTP tests, typecheck and build. M1 local/manual/fixture gate passed with live provider limitations recorded. Four browser flows PASS after all frontend fixes: public search/filters/compare/evidence; private rules and watches; three viewport captures/keyboard/reduced motion; loading/error recovery/import success/raw review/404/security headers. Real images opened at docs/qa/desktop.png, tablet.png, mobile.png. Hallmark static 0 FAIL, one intentional shared-control-style warning; its Puppeteer render tier did not run. Impeccable detector warning for small text corrected. Independent finish reviewer identified three fixes; follow-up scored all three resolved, ship at that fix-list scope. Full M6/production audit not claimed.
+src/research.ts, research-store.ts, config/scoring-v1.json, migration 004 and docs/RESEARCH_INPUT.md. Brandability, geo service, exact match, cleanliness, stability, extension adoption, comparable sales, commercial intent and replacement cost implemented for sourced manual inputs. Company gap/end-user count remain M3 and trend M4; their score values stay null. Unknown metrics never gain points. Weights/coverage/configuration snapshotted; underlying duplicate/correlated evidence reduced. Complete exact TLD lists separated from partial observations and company use; historical snapshots require manual assessment. No sale claims imported. All named owner style cases and negative spam case have fixture regressions only. Model confidence is heuristic, not calibrated probability or valuation.
 
-## Blocked / source limitations
+Private evidence never becomes public enrichment automatically or enters Telegram scores without later license-bound delivery integration. New research requires re-review. Adverse history/backlink evidence removes public exposure and cancels pending notifications. IDN root upgrades are non-destructive and tested; Punycode encoding is not a visible hyphen/digit. Saved paused-rule edits preserve paused API state.
 
-No actual live data collected. No real bot token/webhook, message delivery, external verified-email auth, hosted database, production cron or deployment. GoDaddy Auctions prior docs URL 404: blocked. Dynadot REST beta documented but credentials/feed/quotas/retention/redistribution unproven: blocked. RDAP parser/bootstrap fixture_only, live transport OFF until per-registry approval. Telegram implemented_needs_key; tested with mock transport. All other source integrations not started/manual reference; no commercial plan bought. Fixtures never promote blocked to live.
+## Source/credential blockers and limits
 
-M1 is a usable local/manual vertical slice, not complete provider integration or production service. Outstanding later gates include all scoring/trend/company/outcome modules; full advanced rule fields and reminders/snooze; email verification/recovery, account export/deletion/org UI; API/key lifecycle/quotas; operational licensing/retention, source circuits and production migration/hosting. Company-gap alerts disabled pending legitimate alternative-use evidence. Trademark Section 13 verbatim deferred_by_owner, outcome not_checked. API/billing/WhatsApp OFF; no automatic bidding or purchasing.
+No real market data collected, real bot linked/delivered, external verified-email onboarding configured, hosted DB/cron installed or deployment made. GoDaddy older Auctions URL 404; inventory rights/access unresolved. Dynadot REST beta documented; keys, actual auction feed/quotas and redistribution unproven. DotDB terms and NameBio denied access; no bypass. Wayback index parser fixture-only and content manual; no archive-storage clearance inferred. Namecheap check docs reviewed (50 names/batch, not rate permission); production access/rights unverified. Maps Places storage restricted, Ads access unverified, Census dataset/key/terms activation pending, commercial history OFF. Registry keeps exact review notes, unknown prices and flags. Telegram implemented_needs_key; mock transport only. All paid/API/billing/WhatsApp flags OFF, daily/monthly paid cap USD 0. No bid/purchase automation. Full trademark Section 13 preserved deferred_by_owner; outcome not_checked.
 
-## Next
+Known remaining integration gaps: private research joined to search/alert rule fields and licensed Telegram payloads; full advanced rules/reminders/snooze; actual per-source transport/circuit/retention enforcement before activation; complete public/customer/account/admin UI; email verification/recovery/org/export/delete workflows; API key lifecycle, quotas and OpenAPI; fair usage/entitlements/billing stub/WhatsApp; outcome calibration and final research reconciliation. No live validation, all-24-live claim or production readiness claim.
 
-M1 check passed (19/19 core/HTTP, 4/4 browser); clean checkpoint committed and pushed. Next M2 extension/history/comparable evidence + revised brandable/geo/EMD scoring and missing-input explanations. Then M3 company evidence, M4 keyword/TLD trends, M5 outcomes, M6 complete public/account/admin design and visual QA, M7 production security/jobs/API/deployment, M7B optional channels/entitlements/billing OFF, M8 audit/handoff. M9 post-handoff activation requires later owner direction; no paid subscription approval inferred.
+## Next ready gate — M3
+
+Start with npm run check and npm run test:browser; never advance with red baseline. Verify official company-source docs/terms before adapters. Implement typed/manual verified company identity + canonical site + exact .com ownership/status evidence; namesakes/ambiguity and independently supported employment/funding/growth; normalized original 125-point heuristic without correlated double count; legitimate alternative-use evidence and human review. Exclude company-owned exact .com, unsupported funding earns no credit, unknown buyability not sale eligibility. Full trademark checks stay deferred; no no-conflict badge. Keep company-gap promotion disabled until its evidence/review contracts pass. Add privacy/source/fixture regression tests and actual UI QA if changing frontend; commit and push before M4.
+
+Remaining sequence: M4 keyword/TLD time series (qualified historical Spaceship .si claims only); M5 outcomes/costs/investor research; M6 complete distinctive public/account/admin UI; M7 security/API/jobs/deployment; M7B optional channels/entitlements/billing OFF; M8 all-24-section audit. M9 post-handoff activation only with later explicit owner direction. No video.
 
 ## Research checklist
-- [x] All 24 original sections retained and line-indexed, exact historical qualifications intact.
-- [x] Provider inventory/status/remaining gaps; license-aware multi-tenant architecture.
-- [x] Original identity and real M1 screenshot/functional QA evidence.
-- [x] Manual import/review, personal rules and fixture-only alert tests.
-- [x] Unknown/null, fixture isolation, public-rights and basic tenant isolation tests.
-- [ ] Live authorized inventory/RDAP/enrichment and real Telegram smoke.
-- [ ] M2–8 features and acceptance scenarios; full 12-dimension scoring audit.
+- [x] Full original brief and all 24 sections retained; deferred legal inventory preserved.
+- [x] Named providers/statuses, source provenance, license partitions and null semantics tracked.
+- [x] Usable manual intake/review, private rules, preview-only fixtures and basic tenant isolation.
+- [x] Original identity and real M1/M2 screenshots/review evidence.
+- [x] Nine M2 manual dimensions and twelve-slot export; explainability/coverage/config snapshots.
+- [ ] Live authorized feeds/enrichment and real consenting Telegram smoke.
+- [ ] M3–8 scope, all personalized/API/security acceptance scenarios and launch audit.

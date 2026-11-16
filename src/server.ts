@@ -8,6 +8,8 @@ import { fixtureRows } from './fixtures.ts';
 import { validateRule,evaluate } from './rules.ts';
 import { createLink,consumeLink,unlink,optionsFromEnv,telegramReady,renderAlert,type TelegramOptions } from './telegram.ts';
 import { queueJob } from './jobs.ts';
+import {saveResearch,latestResearch} from './research-store.ts';
+import {scoreResearch,defaultScoreConfig} from './research.ts';
 export function createApp(store:Store,opts:{origin?:string;telegram?:TelegramOptions}={}) {
  const origin=opts.origin||process.env.PUBLIC_ORIGIN||'http://127.0.0.1:4310',telegram=opts.telegram||optionsFromEnv();
  const attempts=new Map<string,{n:number;until:number}>();
@@ -38,6 +40,9 @@ export function createApp(store:Store,opts:{origin?:string;telegram?:TelegramOpt
     return send(res,200,{records:rows.slice((page-1)*pageSize,page*pageSize).map(d=>publicRecord(d,p)),total,page,pageSize,dataset});
    }
    if(path.match(/^\/api\/domains\/[a-f0-9]{64}$/)&&method==='GET'){const d=store.record(path.split('/').at(-1)!,p,url.searchParams.get('dataset')==='fixture'?'fixture':'all');return send(res,200,{record:publicRecord(d,p),raw:p?.tenantId===d.tenantId&&p.role==='owner'?store.raw(d.id,p):null});}
+   if(path.match(/^\/api\/research\/[a-f0-9]{64}$/)&&method==='GET'){const user=requireUser(p);return send(res,200,{snapshot:latestResearch(store,user,path.split('/').at(-1)!)});}
+   if(path==='/api/research'&&method==='POST'){const user=requireUser(p),b=await body(req);return send(res,200,saveResearch(store,user,String(b.id),b.bundle,b.config||defaultScoreConfig()));}
+   if(path==='/api/research/preview'&&method==='POST'){requireUser(p);const b=await body(req);return send(res,200,{result:scoreResearch(String(b.label),b.bundle,b.config||defaultScoreConfig()),persisted:false,sent:false});}
    if(path==='/api/import'&&method==='POST'){const user=requireUser(p);if(user.role!=='owner')fail('forbidden','Owner import permission required.',403);const b=await body(req);if(typeof b.content!=='string'||!['json','csv'].includes(b.format))fail('invalid_import','Select JSON or CSV and provide content.');return send(res,200,store.import(parseImport(b.content,b.format),user));}
    if(path==='/api/review'&&method==='POST'){const user=requireUser(p),b=await body(req);return send(res,200,{record:store.review(String(b.id),user)});}
    if(path==='/api/watchlist'&&method==='GET')return send(res,200,{ids:store.watches(requireUser(p))});
