@@ -1,0 +1,15 @@
+# Architecture
+
+M0 reality: initial README only, main at 9910518; no tests/framework/database/deployment/CI to preserve. Existing Flownix work is unrelated and untouched. Node 22.23.1 and Python 3.12.3 available. SQLite DatabaseSync exercised successfully; it is experimental on Node 22 and production readiness needs a pinned runtime review.
+
+TypeScript Node HTTP server + browser TypeScript compiled by tsc. SQLite file outside public assets, WAL, foreign keys, numbered transactional migrations. No transient timers: jobs in DB with lease, attempt count, checkpoint, retry time, dead letter. One bounded external operation per worker invocation; persistent host cron required. PostgreSQL recommended before multi-instance deployment; SQLite file cannot live on ephemeral Vercel storage. No deployment claimed.
+
+Shared: normalized domains/roots, licensed listings, versioned evidence observations, scores. Each listing has dataset class fixture/manual/live, source, license reference, audience scope (owner/public), owner tenant, observation time, external listing ID. Private: users/organizations/memberships, sessions, saved rules and versions, watchlists, link codes, encrypted Telegram destinations, delivery outbox, decisions, purchases/costs/outcomes, audit logs, API keys. Public endpoints project an explicit allowlist and require public redistribution permission. No raw import payload on public routes.
+
+Pipeline: authorized import/connector -> normalization and dedupe -> inexpensive filter -> bounded RDAP -> selected enrichment -> category score -> explicit human review -> per-user rule match -> deduplicated delivery. Fixtures have separate dataset keys and cannot enter real outbox. Unknown values null. Availability and listing status separate.
+
+Every server resource accepts authenticated principal, never a tenant ID from client authority. Session tokens hash at rest; same-origin mutations, HttpOnly cookies, expiry, verified email/provider required before public onboarding. Local owner setup is a separate owner-console CLI, not public signup. Telegram codes random, hashed, short-lived, consume atomically, private chat and webhook secret verified. Destination encrypted using externally supplied key; no global chat ID.
+
+Future schema contracts: companies/company evidence; extension observations with actual TLD set; history use/abuse evidence; sales and provenance class; immutable per-dimension score snapshots; trends/timeseries; TLD-specific launch/registrant metrics; outcomes/expenses/currencies; investor opinions; trademark outcome constrained to not_checked until owner enables later. M2–5 add tested migrations, not pretend populated tables.
+
+Cost model: local fixture/import $0 external spend; paid providers OFF with zero caps. Per-provider request ledger, concurrency, retries, circuit breaking, freshness/license retention and per-user quotas enforced before any activation. Redistribution rights independent of connector availability. No model trained/calibrated claims.
