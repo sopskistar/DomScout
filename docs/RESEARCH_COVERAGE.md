@@ -6,8 +6,8 @@ Statuses: live_verified, implemented_needs_key, fixture_only, manual_only, block
 
 |Section|Milestone|Status|Evidence / remaining gap|
 |---|---|---|---|
-|1|1|not_started|Line inventory in research-requirements.json; implementation pending.|
-|2|1|not_started|Line inventory in research-requirements.json; implementation pending.|
+|1|1|manual_only|Partial M0/M1 delivery; line inventory and acceptance ledger below preserve all remaining gaps.|
+|2|1|manual_only|Partial M0/M1 delivery; line inventory and acceptance ledger below preserve all remaining gaps.|
 |3|2|not_started|Line inventory in research-requirements.json; implementation pending.|
 |4|2|not_started|Line inventory in research-requirements.json; implementation pending.|
 |5|3|not_started|Line inventory in research-requirements.json; implementation pending.|
@@ -22,13 +22,13 @@ Statuses: live_verified, implemented_needs_key, fixture_only, manual_only, block
 |14|2|not_started|Line inventory in research-requirements.json; implementation pending.|
 |15|5|not_started|Line inventory in research-requirements.json; implementation pending.|
 |16|5|not_started|Line inventory in research-requirements.json; implementation pending.|
-|17|0|not_started|Line inventory in research-requirements.json; implementation pending.|
-|18|1|not_started|Line inventory in research-requirements.json; implementation pending.|
-|19|0|not_started|Line inventory in research-requirements.json; implementation pending.|
-|20|1|not_started|Line inventory in research-requirements.json; implementation pending.|
+|17|0|manual_only|Partial M0/M1 delivery; line inventory and acceptance ledger below preserve all remaining gaps.|
+|18|1|manual_only|Partial M0/M1 delivery; line inventory and acceptance ledger below preserve all remaining gaps.|
+|19|0|manual_only|Partial M0/M1 delivery; line inventory and acceptance ledger below preserve all remaining gaps.|
+|20|1|manual_only|Partial M0/M1 delivery; line inventory and acceptance ledger below preserve all remaining gaps.|
 |21|5|not_started|Line inventory in research-requirements.json; implementation pending.|
-|22|8|not_started|Line inventory in research-requirements.json; implementation pending.|
-|23|0|not_started|Line inventory in research-requirements.json; implementation pending.|
+|22|8|manual_only|Partial M0/M1 delivery; line inventory and acceptance ledger below preserve all remaining gaps.|
+|23|0|manual_only|Partial M0/M1 delivery; line inventory and acceptance ledger below preserve all remaining gaps.|
 |24|8|not_started|Line inventory in research-requirements.json; implementation pending.|
 
 ## Superseding owner decisions
@@ -44,3 +44,28 @@ M2: brandability, geo service, exact match, cleanliness, stability, extension ad
 
 ## Providers
 Every named provider is inventoried in SOURCE_REGISTRY.md and source-registry.json, including deferred legal registries. Unreviewed entries have no access authorization.
+
+## Milestone 1 delivered slice
+
+Authorized CSV/JSON import, normalized registrable domains/IDN/roots, provenance/raw snapshots, explicit nulls and status semantics, private owner/researcher sessions and permission checks, public-license allowlist, search/table/multi-sort/pagination, comparison/watchlist, per-user versioned rules with nested conditions and previews, Lagos daily/weekly schedules and quiet hours, shared-bot one-time destination linking/encryption, fixture-proof reviewed outbox, material deduplication, persistent leased jobs and tested zero-spend reservation helper. Evidence: src/, migrations/001–003; tests/core.test.ts, tests/http.test.ts, tests/browser/workspace.spec.ts; docs/qa/.
+
+These features are manual_only or fixture_only in the line inventory, never live_verified. Original future modules have empty relational contracts in migration 003; a schema contract does not mark their features implemented. Score dimensions still not_started. All 53 sources remain non-live. GoDaddy/Dynadot disabled adapters blocked; RDAP parser/bootstrap fixture_only; Telegram implemented_needs_key, real linking/delivery not verified. No fixture candidate is sent to the real bot.
+
+M1 limitations for later gates: registrar availability confirmation, actual RDAP transport, source-specific budgets/retries/circuits connected to live providers, verified external email onboarding, organization management, license retention automation, complete rule fields for later evidence, auction reminders, snooze, account export/delete UI and production scheduler not shipped. Company-gap alert promotion stays disabled until independently useful alternative-use evidence and M3 review contracts exist. Source access failures do not stop manual/fixture research.
+
+## Acceptance scenario ledger
+
+|Scenario|Evidence|Status|
+|---|---|---|
+|User A/B different rules and destinations, own matches only|core.test.ts mocked Telegram transport + http.test.ts isolation|fixture_only|
+|Expiring .com, length 4–8, 5+ extensions, USD 500 ceiling|baseRule core tests and browser rule preview/save|fixture_only|
+|Separate trend-velocity rule|typed rule validation with missing-data exclusion|fixture_only (no trend engine until M4)|
+|Daily Lagos digest and quiet hours|scheduleDue tests, rule UI|fixture_only|
+|Link/unlink, expire/replay, private destination proof|Telegram core tests; disabled-state browser check|fixture_only; real credentials absent|
+|No fixture alerts, no duplicates, refresh-only suppression|core tests outbox/material fingerprint|fixture_only|
+|Missing extension/backlink data|extension-null test; backlink schema null, rule support deferred|fixture_only / not_started|
+|Cross-user filters/chat/API keys|rules/session/record denials and encrypted link mapping; API keys not built|fixture_only / not_started|
+|Expired/revoked API key and quotas|/api/v1 disabled, key lifecycle deferred M7|not_started|
+|Public source rights|license allowlist + projection tests|fixture_only|
+|No payment, WhatsApp disconnected|OFF defaults and disabled UI/routes|fixture_only|
+|No commercial connectors required|offline checks and manual import browser flow|manual_only|

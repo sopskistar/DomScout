@@ -14,7 +14,11 @@
     "dev": "npm run build && node --env-file-if-exists=.env dist/server.js",
     "start": "node --env-file-if-exists=.env dist/server.js",
     "test:browser": "playwright test",
-    "resume": "npm run check"
+    "resume": "npm run check",
+    "owner:create": "node --experimental-strip-types --env-file-if-exists=.env src/cli.ts owner",
+    "worker": "node --experimental-strip-types --env-file-if-exists=.env src/cli.ts worker",
+    "queue": "node --experimental-strip-types --env-file-if-exists=.env src/cli.ts queue",
+    "import": "node --experimental-strip-types --env-file-if-exists=.env src/cli.ts import"
   },
   "dependencies": {
     "tldts": "6.1.86"

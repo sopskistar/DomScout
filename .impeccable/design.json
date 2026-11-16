@@ -1,0 +1,14 @@
+{
+  "platform": "web",
+  "authority": "DESIGN.md",
+  "mode": "operate",
+  "buildPath": "code (this surface only; no standing preference inferred)",
+  "tokens": {
+    "primitive": {"white":"#FFFFFF","charcoal":"#18181B","orange":"#F97316","deepOrange":"#C2410C","ground":"#F7F8FA"},
+    "semantic": {"surface":"--white","text":"--neutral-900","accent":"--orange-700","selected":"--orange-50"},
+    "component": {"button":"--button-bg","selection":"--row-selected","filters":"--filter-surface"}
+  },
+  "source": "public/style.css :root",
+  "direction": "surfaces/discovery.md",
+  "note": "Original owner-pinned identity; not a completed remote direction roll or M6 audit."
+}

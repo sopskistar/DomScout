@@ -599,10 +599,15 @@
     "line": 60,
     "requirement": "GoDaddy Auctions API and inventory documentation\tExpiring auctions, closeouts, downloadable inventory\tHigh",
     "milestone": 1,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "blocked",
+    "reason": "Old Auctions endpoint 404; typed disabled adapter and generic authorized import; current inventory rights/auth unverified.",
+    "evidence": [
+      "docs/SOURCE_REGISTRY.md",
+      "src/connectors.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R02-L0061",
@@ -610,10 +615,15 @@
     "line": 61,
     "requirement": "Dynadot Domain API\tAuction discovery, expired inventory, backorders and domain operations\tHigh",
     "milestone": 1,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "blocked",
+    "reason": "REST beta docs verified, keys/auction endpoint/storage/redistribution eligibility not proven. No live fetch.",
+    "evidence": [
+      "docs/SOURCE_REGISTRY.md",
+      "src/connectors.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R02-L0062",
@@ -720,10 +730,15 @@
     "line": 71,
     "requirement": "GoDaddy: Its official documentation describes downloadable auction inventory in ZIP, XML and JSON formats. It also documents an Auctions API for supported auction operations. Check authentication and account eligibility before building around it. GoDaddy Developer Platform",
     "milestone": 1,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "blocked",
+    "reason": "Old Auctions endpoint 404; typed disabled adapter and generic authorized import; current inventory rights/auth unverified.",
+    "evidence": [
+      "docs/SOURCE_REGISTRY.md",
+      "src/connectors.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R02-L0072",
@@ -731,10 +746,15 @@
     "line": 72,
     "requirement": "Dynadot: Its API supports domain operations and aftermarket functionality. Its documentation includes open-auction discovery and backorder-related commands. Check the current API documentation and account limits. Dynadot",
     "milestone": 1,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "blocked",
+    "reason": "REST beta docs verified, keys/auction endpoint/storage/redistribution eligibility not proven. No live fetch.",
+    "evidence": [
+      "docs/SOURCE_REGISTRY.md",
+      "src/connectors.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R02-L0073",
@@ -808,10 +828,14 @@
     "line": 79,
     "requirement": "Original listing URL.",
     "milestone": 1,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/import.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R02-L0080",
@@ -819,10 +843,14 @@
     "line": 80,
     "requirement": "Auction or listing ID.",
     "milestone": 1,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/import.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R02-L0081",
@@ -830,10 +858,14 @@
     "line": 81,
     "requirement": "First-seen timestamp.",
     "milestone": 1,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/import.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R02-L0082",
@@ -841,10 +873,14 @@
     "line": 82,
     "requirement": "Last-checked timestamp.",
     "milestone": 1,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/import.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R02-L0083",
@@ -852,10 +888,14 @@
     "line": 83,
     "requirement": "Current listing status.",
     "milestone": 1,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/import.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R02-L0084",
@@ -885,10 +925,14 @@
     "line": 86,
     "requirement": "Acquisition method.",
     "milestone": 1,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/import.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R02-L0087",
@@ -896,10 +940,14 @@
     "line": 87,
     "requirement": "Any restrictions on how the source data can be used.",
     "milestone": 1,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/import.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R02-L0088",
@@ -962,10 +1010,14 @@
     "line": 93,
     "requirement": "ICANN RDAP information\tRegistration data and domain status",
     "milestone": 1,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "fixture_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/connectors.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R02-L0094",
@@ -973,10 +1025,14 @@
     "line": 94,
     "requirement": "ICANN Lookup\tManual registration lookup",
     "milestone": 1,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "fixture_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/connectors.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R02-L0095",
@@ -1006,10 +1062,14 @@
     "line": 97,
     "requirement": "RDAP is the preferred starting point for standardized registration data where the relevant registry supports it. ICANN",
     "milestone": 1,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "fixture_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/connectors.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R02-L0098",
@@ -1028,10 +1088,14 @@
     "line": 99,
     "requirement": "Registration creation date.",
     "milestone": 1,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "fixture_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/connectors.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R02-L0100",
@@ -1039,10 +1103,14 @@
     "line": 100,
     "requirement": "Expiration date.",
     "milestone": 1,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "fixture_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/connectors.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R02-L0101",
@@ -1072,10 +1140,14 @@
     "line": 103,
     "requirement": "Nameservers.",
     "milestone": 1,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "fixture_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/connectors.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R02-L0104",
@@ -1083,10 +1155,14 @@
     "line": 104,
     "requirement": "Last update date.",
     "milestone": 1,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "fixture_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/connectors.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R02-L0105",
@@ -1094,10 +1170,14 @@
     "line": 105,
     "requirement": "Current registration status.",
     "milestone": 1,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "fixture_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/connectors.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R02-L0106",
@@ -1192,7 +1272,7 @@
     "section": 2,
     "line": 114,
     "requirement": "C. Extension-count research",
-    "milestone": 1,
+    "milestone": 2,
     "status": "not_started",
     "reason": "Inventory retained; see section status and owner overrides.",
     "evidence": [],
@@ -1225,7 +1305,7 @@
     "section": 2,
     "line": 117,
     "requirement": "DotDB",
-    "milestone": 1,
+    "milestone": 2,
     "status": "not_started",
     "reason": "Inventory retained; see section status and owner overrides.",
     "evidence": [],
@@ -1688,10 +1768,14 @@
     "line": 160,
     "requirement": "ICANN Lookup",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "fixture_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/connectors.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R03-L0161",
@@ -1919,10 +2003,14 @@
     "line": 181,
     "requirement": "Insufficient historical evidence\tUnknown; do not assume clean",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "fixture_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/import.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R03-L0182",
@@ -1930,10 +2018,14 @@
     "line": 182,
     "requirement": "A lack of archived pages does not prove that a domain is clean.",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "fixture_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/import.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R03-L0183",
@@ -3041,10 +3133,15 @@
     "line": 286,
     "requirement": "10. Check trademark risk.",
     "milestone": 3,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "deferred",
+    "reason": "deferred_by_owner: full trademark workflow superseded; basic impersonation/manual review retained",
+    "evidence": [
+      "docs/MASTER_SPEC.md",
+      "src/types.ts"
+    ],
+    "tests": [
+      "tests/baseline.test.ts"
+    ]
   },
   {
     "id": "R05-L0287",
@@ -4702,10 +4799,14 @@
     "line": 437,
     "requirement": "Domain length.",
     "milestone": 2,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/normalize.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R08-L0438",
@@ -8178,10 +8279,14 @@
     "line": 760,
     "requirement": "Record unknown values as unknown rather than zero.",
     "milestone": 5,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "fixture_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/import.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R15-L0761",
@@ -8937,10 +9042,14 @@
     "line": 829,
     "requirement": "Domain casing.",
     "milestone": 0,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/normalize.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R17-L0830",
@@ -8948,10 +9057,14 @@
     "line": 830,
     "requirement": "Internationalized domain names.",
     "milestone": 0,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/normalize.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R17-L0831",
@@ -8959,10 +9072,14 @@
     "line": 831,
     "requirement": "Punycode.",
     "milestone": 0,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/normalize.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R17-L0832",
@@ -8981,10 +9098,14 @@
     "line": 833,
     "requirement": "Root name.",
     "milestone": 0,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/normalize.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R17-L0834",
@@ -8992,10 +9113,14 @@
     "line": 834,
     "requirement": "Domain length.",
     "milestone": 0,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/normalize.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R17-L0835",
@@ -9003,10 +9128,14 @@
     "line": 835,
     "requirement": "Hyphens and numbers.",
     "milestone": 0,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/normalize.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R17-L0836",
@@ -9014,10 +9143,14 @@
     "line": 836,
     "requirement": "Duplicate records.",
     "milestone": 0,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/normalize.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R17-L0837",
@@ -9894,10 +10027,15 @@
     "line": 923,
     "requirement": "GoDaddy inventory connector.",
     "milestone": 1,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "blocked",
+    "reason": "Old Auctions endpoint 404; typed disabled adapter and generic authorized import; current inventory rights/auth unverified.",
+    "evidence": [
+      "docs/SOURCE_REGISTRY.md",
+      "src/connectors.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R18-L0924",
@@ -9905,10 +10043,15 @@
     "line": 924,
     "requirement": "Dynadot auction connector.",
     "milestone": 1,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "blocked",
+    "reason": "REST beta docs verified, keys/auction endpoint/storage/redistribution eligibility not proven. No live fetch.",
+    "evidence": [
+      "docs/SOURCE_REGISTRY.md",
+      "src/connectors.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R18-L0925",
@@ -10158,10 +10301,15 @@
     "line": 947,
     "requirement": "Trademark screening.",
     "milestone": 1,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "deferred",
+    "reason": "deferred_by_owner: full trademark workflow superseded; basic impersonation/manual review retained",
+    "evidence": [
+      "docs/MASTER_SPEC.md",
+      "src/types.ts"
+    ],
+    "tests": [
+      "tests/baseline.test.ts"
+    ]
   },
   {
     "id": "R18-L0948",
@@ -10521,10 +10669,15 @@
     "line": 980,
     "requirement": "Trademark screening\tOfficial trademark search tools\tLicensed legal or trademark research services",
     "milestone": 0,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "deferred",
+    "reason": "deferred_by_owner: full trademark workflow superseded; basic impersonation/manual review retained",
+    "evidence": [
+      "docs/MASTER_SPEC.md",
+      "src/types.ts"
+    ],
+    "tests": [
+      "tests/baseline.test.ts"
+    ]
   },
   {
     "id": "R19-L0981",
@@ -10807,10 +10960,15 @@
     "line": 1006,
     "requirement": "Trademark screening",
     "milestone": 0,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "deferred",
+    "reason": "deferred_by_owner: full trademark workflow superseded; basic impersonation/manual review retained",
+    "evidence": [
+      "docs/MASTER_SPEC.md",
+      "src/types.ts"
+    ],
+    "tests": [
+      "tests/baseline.test.ts"
+    ]
   },
   {
     "id": "R19-L1007",
@@ -10895,10 +11053,14 @@
     "line": 1014,
     "requirement": "Preferred domain extensions.",
     "milestone": 1,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/rules.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R20-L1015",
@@ -10906,10 +11068,14 @@
     "line": 1015,
     "requirement": "Minimum and maximum domain length.",
     "milestone": 1,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/normalize.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R20-L1016",
@@ -10917,10 +11083,14 @@
     "line": 1016,
     "requirement": "Allowed hyphens and numbers.",
     "milestone": 1,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/normalize.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R20-L1017",
@@ -10983,10 +11153,14 @@
     "line": 1022,
     "requirement": "Maximum acquisition budget.",
     "milestone": 1,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/rules.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R20-L1023",
@@ -11027,10 +11201,14 @@
     "line": 1026,
     "requirement": "Telegram alert frequency.",
     "milestone": 1,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/rules.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R20-L1027",
@@ -11038,10 +11216,14 @@
     "line": 1027,
     "requirement": "Maximum daily API spending.",
     "milestone": 1,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/rules.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R20-L1028",
@@ -11049,10 +11231,14 @@
     "line": 1028,
     "requirement": "Maximum daily alerts.",
     "milestone": 1,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/telegram.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R20-L1029",
@@ -11137,10 +11323,14 @@
     "line": 1036,
     "requirement": "Avoid duplicate notifications.",
     "milestone": 1,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/telegram.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R20-L1037",
@@ -11148,10 +11338,14 @@
     "line": 1037,
     "requirement": "Store timestamps for observations.",
     "milestone": 1,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/telegram.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R20-L1038",
@@ -11159,10 +11353,14 @@
     "line": 1038,
     "requirement": "Distinguish unknown values from zero.",
     "milestone": 1,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "fixture_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/import.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R20-L1039",
@@ -11170,10 +11368,14 @@
     "line": 1039,
     "requirement": "Do not automatically purchase or bid on domains in the MVP.",
     "milestone": 1,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/telegram.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R20-L1040",
@@ -11181,10 +11383,14 @@
     "line": 1040,
     "requirement": "Require manual review before acquisition.",
     "milestone": 1,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/telegram.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R20-L1041",
@@ -11676,10 +11882,14 @@
     "line": 1092,
     "requirement": "2. Normalize and deduplicate records.",
     "milestone": 8,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/normalize.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R22-L1093",
@@ -11753,10 +11963,15 @@
     "line": 1099,
     "requirement": "9. Check trademark risk.",
     "milestone": 8,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "deferred",
+    "reason": "deferred_by_owner: full trademark workflow superseded; basic impersonation/manual review retained",
+    "evidence": [
+      "docs/MASTER_SPEC.md",
+      "src/types.ts"
+    ],
+    "tests": [
+      "tests/baseline.test.ts"
+    ]
   },
   {
     "id": "R22-L1100",
@@ -11830,10 +12045,15 @@
     "line": 1108,
     "requirement": "- GoDaddy Auctions inventory and official API.",
     "milestone": 8,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "blocked",
+    "reason": "Old Auctions endpoint 404; typed disabled adapter and generic authorized import; current inventory rights/auth unverified.",
+    "evidence": [
+      "docs/SOURCE_REGISTRY.md",
+      "src/connectors.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R22-L1109",
@@ -11841,10 +12061,15 @@
     "line": 1109,
     "requirement": "- Dynadot Domain API and auction functionality.",
     "milestone": 8,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "blocked",
+    "reason": "REST beta docs verified, keys/auction endpoint/storage/redistribution eligibility not proven. No live fetch.",
+    "evidence": [
+      "docs/SOURCE_REGISTRY.md",
+      "src/connectors.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R22-L1110",
@@ -12237,10 +12462,15 @@
     "line": 1149,
     "requirement": "M. Trademark risk screening.",
     "milestone": 8,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "deferred",
+    "reason": "deferred_by_owner: full trademark workflow superseded; basic impersonation/manual review retained",
+    "evidence": [
+      "docs/MASTER_SPEC.md",
+      "src/types.ts"
+    ],
+    "tests": [
+      "tests/baseline.test.ts"
+    ]
   },
   {
     "id": "R22-L1150",
@@ -12798,10 +13028,15 @@
     "line": 1211,
     "requirement": "8. Check trademark risks.",
     "milestone": 8,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "deferred",
+    "reason": "deferred_by_owner: full trademark workflow superseded; basic impersonation/manual review retained",
+    "evidence": [
+      "docs/MASTER_SPEC.md",
+      "src/types.ts"
+    ],
+    "tests": [
+      "tests/baseline.test.ts"
+    ]
   },
   {
     "id": "R22-L1212",
@@ -13997,10 +14232,14 @@
     "line": 1352,
     "requirement": "Avoid duplicate alerts.",
     "milestone": 8,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/telegram.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R22-L1354",
@@ -14030,10 +14269,15 @@
     "line": 1357,
     "requirement": "- GoDaddy inventory.",
     "milestone": 8,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "blocked",
+    "reason": "Old Auctions endpoint 404; typed disabled adapter and generic authorized import; current inventory rights/auth unverified.",
+    "evidence": [
+      "docs/SOURCE_REGISTRY.md",
+      "src/connectors.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R22-L1358",
@@ -14041,10 +14285,15 @@
     "line": 1358,
     "requirement": "- Dynadot auction data.",
     "milestone": 8,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "blocked",
+    "reason": "REST beta docs verified, keys/auction endpoint/storage/redistribution eligibility not proven. No live fetch.",
+    "evidence": [
+      "docs/SOURCE_REGISTRY.md",
+      "src/connectors.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R22-L1359",
@@ -14206,10 +14455,15 @@
     "line": 1375,
     "requirement": "- Trademark screening.",
     "milestone": 8,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "deferred",
+    "reason": "deferred_by_owner: full trademark workflow superseded; basic impersonation/manual review retained",
+    "evidence": [
+      "docs/MASTER_SPEC.md",
+      "src/types.ts"
+    ],
+    "tests": [
+      "tests/baseline.test.ts"
+    ]
   },
   {
     "id": "R22-L1377",
@@ -14382,10 +14636,14 @@
     "line": 1397,
     "requirement": "- Never hard-code API secrets.",
     "milestone": 8,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "manual_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/telegram.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R22-L1398",
@@ -14426,10 +14684,14 @@
     "line": 1401,
     "requirement": "- Distinguish unknown values from zero.",
     "milestone": 8,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "fixture_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/import.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R22-L1402",
@@ -14756,10 +15018,15 @@
     "line": 1435,
     "requirement": "GoDaddy Auctions API documentation",
     "milestone": 0,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "blocked",
+    "reason": "Old Auctions endpoint 404; typed disabled adapter and generic authorized import; current inventory rights/auth unverified.",
+    "evidence": [
+      "docs/SOURCE_REGISTRY.md",
+      "src/connectors.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R23-L1436",
@@ -14767,10 +15034,15 @@
     "line": 1436,
     "requirement": "GoDaddy developer documentation",
     "milestone": 0,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "blocked",
+    "reason": "Old Auctions endpoint 404; typed disabled adapter and generic authorized import; current inventory rights/auth unverified.",
+    "evidence": [
+      "docs/SOURCE_REGISTRY.md",
+      "src/connectors.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R23-L1437",
@@ -14778,10 +15050,15 @@
     "line": 1437,
     "requirement": "Dynadot API documentation",
     "milestone": 0,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "blocked",
+    "reason": "REST beta docs verified, keys/auction endpoint/storage/redistribution eligibility not proven. No live fetch.",
+    "evidence": [
+      "docs/SOURCE_REGISTRY.md",
+      "src/connectors.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R23-L1438",
@@ -14789,10 +15066,14 @@
     "line": 1438,
     "requirement": "ICANN RDAP documentation",
     "milestone": 0,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "fixture_only",
+    "reason": "M1 contract/authorized manual route; no live source verification claimed.",
+    "evidence": [
+      "src/connectors.ts"
+    ],
+    "tests": [
+      "tests/core.test.ts"
+    ]
   },
   {
     "id": "R23-L1439",
@@ -14877,10 +15158,15 @@
     "line": 1446,
     "requirement": "USPTO trademark search",
     "milestone": 0,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "deferred",
+    "reason": "deferred_by_owner: full trademark workflow superseded; basic impersonation/manual review retained",
+    "evidence": [
+      "docs/MASTER_SPEC.md",
+      "src/types.ts"
+    ],
+    "tests": [
+      "tests/baseline.test.ts"
+    ]
   },
   {
     "id": "R23-L1447",
@@ -14888,10 +15174,15 @@
     "line": 1447,
     "requirement": "WIPO Global Brand Database",
     "milestone": 0,
-    "status": "not_started",
-    "reason": "Inventory retained; see section status and owner overrides.",
-    "evidence": [],
-    "tests": []
+    "status": "deferred",
+    "reason": "deferred_by_owner: full trademark workflow superseded; basic impersonation/manual review retained",
+    "evidence": [
+      "docs/MASTER_SPEC.md",
+      "src/types.ts"
+    ],
+    "tests": [
+      "tests/baseline.test.ts"
+    ]
   },
   {
     "id": "R23-L1448",

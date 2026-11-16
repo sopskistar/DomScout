@@ -14,8 +14,8 @@ Checked 2026-11-16 where a date is present. No provider is live_verified. Unrevi
 |[Afternic](https://www.afternic.com/)|1 / not_started|`AFTERNIC_ENABLED=false`|Not yet reviewed. URL is a starting point from the inventory, not access authorization.|
 |[Spaceship](https://www.spaceship.com/)|4 / not_started|`SPACESHIP_ENABLED=false`|Not yet reviewed. URL is a starting point from the inventory, not access authorization.|
 |[ExpiredDomains.net](https://www.expireddomains.net/)|0 / manual_only|`EXPIREDDOMAINS_NET_ENABLED=false`|Terms URL unavailable in review. Reference/manual-only, no scraper.|
-|[ICANN RDAP](https://www.icann.org/rdap)|1 / not_started|`ICANN_RDAP_ENABLED=false`|Registration protocol verified; registry-specific terms, retention and quotas still require per-host approval. Nonexistence never proves purchase eligibility.|
-|[IANA RDAP Bootstrap](https://data.iana.org/rdap/dns.json)|1 / not_started|`IANA_RDAP_BOOTSTRAP_ENABLED=false`|Official HTTPS DNS bootstrap inspected, publication 2026-10-28. Registry URLs must be vetted; HTTPS only, no arbitrary host fetch.|
+|[ICANN RDAP](https://www.icann.org/rdap)|1 / fixture_only|`ICANN_RDAP_ENABLED=false`|Registration protocol verified; registry-specific terms, retention and quotas still require per-host approval. Nonexistence never proves purchase eligibility.|
+|[IANA RDAP Bootstrap](https://data.iana.org/rdap/dns.json)|1 / fixture_only|`IANA_RDAP_BOOTSTRAP_ENABLED=false`|Official HTTPS DNS bootstrap inspected, publication 2026-10-28. Registry URLs must be vetted; HTTPS only, no arbitrary host fetch.|
 |[ICANN Lookup](https://lookup.icann.org/)|1 / manual_only|`ICANN_LOOKUP_ENABLED=false`|Not yet reviewed. URL is a starting point from the inventory, not access authorization.|
 |[WhoisXML API](https://www.whoisxmlapi.com/)|2 / not_started|`WHOISXML_API_ENABLED=false`|Not yet reviewed. URL is a starting point from the inventory, not access authorization.|
 |[SecurityTrails](https://securitytrails.com/)|2 / not_started|`SECURITYTRAILS_ENABLED=false`|Not yet reviewed. URL is a starting point from the inventory, not access authorization.|
@@ -53,7 +53,7 @@ Checked 2026-11-16 where a date is present. No provider is live_verified. Unrevi
 |[SpamZilla](https://www.spamzilla.io/)|8 / not_started|`SPAMZILLA_ENABLED=false`|Not yet reviewed. URL is a starting point from the inventory, not access authorization.|
 |[RegisterCompass](https://www.registercompass.com/)|8 / not_started|`REGISTERCOMPASS_ENABLED=false`|Not yet reviewed. URL is a starting point from the inventory, not access authorization.|
 |[CatchDoms](https://catchdoms.com/)|8 / not_started|`CATCHDOMS_ENABLED=false`|Not yet reviewed. URL is a starting point from the inventory, not access authorization.|
-|[Telegram](https://core.telegram.org/bots/api)|1 / not_started|`TELEGRAM_ENABLED=false`|Bot API, BotFather, FAQ and deep-linking docs read. Short-lived account link and secure webhook needed. Free normal broadcast subject to limits; paid broadcast stays disabled.|
+|[Telegram](https://core.telegram.org/bots/api)|1 / implemented_needs_key|`TELEGRAM_ENABLED=false`|Bot API, BotFather, FAQ and deep-linking docs read. Short-lived account link and secure webhook needed. Free normal broadcast subject to limits; paid broadcast stays disabled.|
 |[Meta WhatsApp Cloud API](https://developers.facebook.com/docs/whatsapp/cloud-api/)|7B / not_started|`META_WHATSAPP_CLOUD_API_ENABLED=false`|Not yet reviewed. URL is a starting point from the inventory, not access authorization.|
 |[Email provider](No provider selected)|7B / not_started|`EMAIL_PROVIDER_ENABLED=false`|Not yet reviewed. URL is a starting point from the inventory, not access authorization.|
 |[Billing provider](No provider selected)|7B / not_started|`BILLING_PROVIDER_ENABLED=false`|Not yet reviewed. URL is a starting point from the inventory, not access authorization.|
@@ -61,3 +61,5 @@ Checked 2026-11-16 where a date is present. No provider is live_verified. Unrevi
 Per-source metadata in source-registry.json contains auth, quota, pricing, storage, fallback and checked date. Local operational cap can be lower than a provider cap; caps are not claims about provider permission. All prices remain unknown except Telegram normal free messaging; do not enable paid broadcast.
 
 Manual imports must identify the original provider and authorized license reference. Importing does not make restricted data public. Fixture support never changes blocked to live.
+
+M1 update: Telegram is implemented_needs_key (no real delivery), RDAP/bootstrap are fixture_only contracts, GoDaddy/Dynadot remain blocked. All enabled flags remain false. See machine-readable registry for current statuses.

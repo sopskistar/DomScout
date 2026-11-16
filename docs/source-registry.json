@@ -164,7 +164,7 @@
     "name": "ICANN RDAP",
     "url": "https://www.icann.org/rdap",
     "milestone": 1,
-    "status": "not_started",
+    "status": "fixture_only",
     "flag": "ICANN_RDAP_ENABLED",
     "enabled": false,
     "auth": "Pending official verification",
@@ -173,14 +173,14 @@
     "storage": "No redistribution assumed; owner-only until rights established",
     "fallback": "User-authorized CSV/JSON with evidence URL, timestamp and permission; fixtures isolated",
     "lastChecked": "2026-11-16",
-    "notes": "Registration protocol verified; registry-specific terms, retention and quotas still require per-host approval. Nonexistence never proves purchase eligibility."
+    "notes": "Registration protocol verified; registry-specific terms, retention and quotas still require per-host approval. Nonexistence never proves purchase eligibility. M1 response parser/bootstrap selection tested. Live transport remains OFF pending per-registry policy approval."
   },
   {
     "id": "iana-rdap-bootstrap",
     "name": "IANA RDAP Bootstrap",
     "url": "https://data.iana.org/rdap/dns.json",
     "milestone": 1,
-    "status": "not_started",
+    "status": "fixture_only",
     "flag": "IANA_RDAP_BOOTSTRAP_ENABLED",
     "enabled": false,
     "auth": "Pending official verification",
@@ -189,7 +189,7 @@
     "storage": "No redistribution assumed; owner-only until rights established",
     "fallback": "User-authorized CSV/JSON with evidence URL, timestamp and permission; fixtures isolated",
     "lastChecked": "2026-11-16",
-    "notes": "Official HTTPS DNS bootstrap inspected, publication 2026-10-28. Registry URLs must be vetted; HTTPS only, no arbitrary host fetch."
+    "notes": "Official HTTPS DNS bootstrap inspected, publication 2026-10-28. Registry URLs must be vetted; HTTPS only, no arbitrary host fetch. M1 response parser/bootstrap selection tested. Live transport remains OFF pending per-registry policy approval."
   },
   {
     "id": "icann-lookup",
@@ -788,7 +788,7 @@
     "name": "Telegram",
     "url": "https://core.telegram.org/bots/api",
     "milestone": 1,
-    "status": "not_started",
+    "status": "implemented_needs_key",
     "flag": "TELEGRAM_ENABLED",
     "enabled": false,
     "auth": "Pending official verification",
@@ -797,7 +797,7 @@
     "storage": "No redistribution assumed; owner-only until rights established",
     "fallback": "User-authorized CSV/JSON with evidence URL, timestamp and permission; fixtures isolated",
     "lastChecked": "2026-11-16",
-    "notes": "Bot API, BotFather, FAQ and deep-linking docs read. Short-lived account link and secure webhook needed. Free normal broadcast subject to limits; paid broadcast stays disabled."
+    "notes": "Bot API, BotFather, FAQ and deep-linking docs read. Short-lived account link and secure webhook needed. Free normal broadcast subject to limits; paid broadcast stays disabled. M1 account linking, encryption and outbox implemented with mock transport tests. No real token/webhook/delivery smoke."
   },
   {
     "id": "meta-whatsapp-cloud-api",
