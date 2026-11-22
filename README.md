@@ -15,12 +15,39 @@ Visit http://127.0.0.1:4310. Public inventory starts empty; Explore samples open
 
 ---
 
-## Engineering portfolio: TypeScript, data workflows and reliability
+## Cloud Engineering & DevOps
 
-**Current architecture:** local Node.js/TypeScript research workspace with source-controlled authorized imports, private rules, background/queue CLI entry points and an evidence-first interface. Its checks include typechecking, Node tests, production build and Playwright browser tests.
+*Project-specific implementation record for technical interviews and portfolio review. Items below distinguish completed work from unverified or planned infrastructure.*
 
-**Verified repository tools:** Node.js 22, TypeScript, npm, Playwright, Node test runner and domain-processing library tldts.
+### Cloud platforms
+- **Local-first prototype.** The repository does not currently verify a publicly hosted production service, managed cloud database or always-on background worker.
+- Local Node.js/TypeScript development and owner/private-rule setup are documented; no public cloud deployment is claimed.
 
-**Engineering evidence:** [Operations](docs/OPERATIONS.md) · [Setup](docs/SETUP.md) · [Progress](PROGRESS.md) · [Source registry](docs/SOURCE_REGISTRY.md) · [Visual QA](docs/qa/README.md).
+### DevOps & CI/CD
+- npm-based checks, Node test runner and Playwright browser QA are documented.
+- Source-controlled import and evidence workflows are implemented. No verified Docker Compose, deployed GitHub Actions pipeline, Terraform or Kubernetes is claimed.
 
-**Important boundary:** this is a local project; no public production deployment, live source feed, external message delivery, cloud database, RDAP integration or DNS health-monitoring service is claimed unless its implementation is separately evidenced in future commits.
+### Networking & API engineering
+- Domain parsing and authorized-source ingestion logic; research/adapters must not be represented as live DNS monitoring or active RDAP services.
+- Local authentication/data isolation and API integration boundaries can be studied in the code.
+
+### Monitoring & reliability
+- Operations notes, source provenance, regression checks and visual QA records support reproducibility.
+- No live source feeds, verified Telegram delivery, uptime measurements or backup/restore drill are claimed.
+
+### Architecture & infrastructure diagram
+
+```mermaid
+flowchart LR
+  O[Local operator] --> N[TypeScript research app]
+  N --> S[Authorized local imports and fixtures]
+  N --> R[Private rules and evidence review]
+  N --> T[Local test and QA checks]
+  P[External live sources] -. not connected .-> S
+```
+
+**Deployment:** Local development: http://127.0.0.1:4310 — no verified public deployment
+
+**Technical documentation and proof:** [Setup](docs/SETUP.md) · [Operations](docs/OPERATIONS.md) · [Source registry](docs/SOURCE_REGISTRY.md) · [Progress and limits](PROGRESS.md) · [Visual QA](docs/qa/README.md).
+
+**Evidence boundary:** This project demonstrates local software/test engineering, **not** an operational cloud deployment or tested DNS monitoring service.
